@@ -4,7 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class All_Courses_controller extends CI_Controller {
 
-        
     public function __construct() {
         parent::__construct();
         if (!$this->session->userdata('firstname', 'lastname', 'studentID', 'studentNo', 'studyArea', 'faculty')) {
@@ -25,8 +24,8 @@ class All_Courses_controller extends CI_Controller {
         $stud_id = $this->session->userdata('studentID');
         $data['info'] = $this->Feedback_model->get_all_feedbacks($stud_id);
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        
-        
+
+
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/list_of_courses', $data);
         $this->load->view('layouts/footer');
@@ -36,12 +35,14 @@ class All_Courses_controller extends CI_Controller {
     public function time_management() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "2";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/time_management');
         $this->load->view('layouts/footer_courses');
     }
 
-    public function time_management_feedback()  {
+    public function time_management_feedback() {
         $this->load->view('layouts/header_feedback');
         $this->load->view('feedback/time_management');
         $this->load->view('layouts/footer_courses');
@@ -51,6 +52,8 @@ class All_Courses_controller extends CI_Controller {
     public function study_strategies() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "3";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/study_strategy');
         $this->load->view('layouts/footer_courses');
@@ -66,6 +69,8 @@ class All_Courses_controller extends CI_Controller {
     public function assignment_writing() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "5";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/assignment_writing');
         $this->load->view('layouts/footer_courses');
@@ -79,9 +84,10 @@ class All_Courses_controller extends CI_Controller {
 
 //    Reference Correctly-------------------------------------------------
 
-    public function reference_correctly()  {
+    public function reference_correctly() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $data['notes'] = $this->Student_model->get_notes($stud_id);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/reference_correctly');
         $this->load->view('layouts/footer_courses');
@@ -97,20 +103,11 @@ class All_Courses_controller extends CI_Controller {
     public function goals_setting() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        $data['notes'] = $this->Student_model->get_notes($stud_id);
+        $topicID = "1";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/goals_setting');
         $this->load->view('layouts/footer_courses');
-    }
-    
-     public function goals_setting_note() {
-         $stud_id = $this->session->userdata('studentID');
-         $topicID = "1";
-         $desc = $this->input->post('description');
-                    if ($this->Student_model->update_notes($stud_id,$topicID,$desc)) {
-            echo json_encode(['comment_return'=>'Saved!']);
-            } else {
-            }
     }
 
     public function goals_setting_feedback() {
@@ -124,6 +121,7 @@ class All_Courses_controller extends CI_Controller {
     public function notetaking() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $data['notes'] = $this->Student_model->get_notes($stud_id);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/note_taking');
         $this->load->view('layouts/footer_courses');
@@ -134,12 +132,13 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('feedback/notetaking');
         $this->load->view('layouts/footer_courses');
     }
-    
+
     //    Making better presentations--------------------------------------------
 
     public function presentations() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $data['notes'] = $this->Student_model->get_notes($stud_id);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/presentations');
         $this->load->view('layouts/footer_courses');
@@ -150,12 +149,13 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('feedback/presentations');
         $this->load->view('layouts/footer_courses');
     }
-    
+
     //    Tips for Exams--------------------------------------------
 
     public function tips_for_exams() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $data['notes'] = $this->Student_model->get_notes($stud_id);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/tips_for_exams_and_tests');
         $this->load->view('layouts/footer_courses');
@@ -166,11 +166,14 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('feedback/tips_for_exams');
         $this->load->view('layouts/footer_courses');
     }
+
     //    Concentrating and Memorizing--------------------------------------------
 
     public function concentrating_memorizing() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "4";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/concentrating_memorizing');
         $this->load->view('layouts/footer_courses');
@@ -200,7 +203,7 @@ class All_Courses_controller extends CI_Controller {
         }
         $photo = "no_profile.jpeg";
         $this->Student_model->remove_photo($stud_id, $photo);
-        unlink(FCPATH ."uploads/user_profiles/". $db_photo);
+        unlink(FCPATH . "uploads/user_profiles/" . $db_photo);
         redirect('user_profile_');
     }
 
@@ -247,7 +250,7 @@ class All_Courses_controller extends CI_Controller {
     }
 
 //      Resources--------------------------------------------------------
-   
+
     public function get_resources() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
@@ -258,59 +261,35 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('layouts/footer');
     }
 
+//          Post Notes----------------------------------------------------     
+    public function post_note() {
+        $stud_id = $this->session->userdata('studentID');
+        $topicID = $this->input->post('topicID');
+        $desc = $this->input->post('description');
+
+        $data['info'] = $this->Student_model->get_all_notes($stud_id,$topicID);
+        foreach ($data['info']->result() as $row) {
+            $db_topicID = $row->topicID;
+            $db_studentID = $row->studentID;
+        }
+        if ($db_studentID == $stud_id && $db_topicID == $topicID) {
+            $this->Student_model->update_notes($stud_id, $topicID, $desc);
+            echo json_encode(['comment_return' => 'Saved!']);
+        } else {
+            $data_insert = array(
+                'topicID' => $topicID,
+                'description' => $desc,
+                'studentID' => $stud_id,
+            );
+            if($this->Student_model->insert_new_note($data_insert))
+            {
+            echo json_encode(['comment_return' => 'Saved!']); 
+            }
+            
+        }
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

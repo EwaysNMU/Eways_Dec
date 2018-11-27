@@ -102,7 +102,7 @@
                     <p style="text-align: center" class="card-text">The definition of goal setting is the process of identifying something that you want to accomplish and establishing measurable goals and time frames.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn to set achievable goals</h6>
+                    <h6 style="text-align: center">Learn how to set achievable goals</h6>
                     <div class="text">
                         <a class="button" style="color:white;" href="<?php echo site_url() ?>/goals_setting_">Start</a>
                     </div>
@@ -114,10 +114,10 @@
                 <img class="card-img-top" style="-webkit-user-select: none;cursor: zoom-in;" src="<?php echo base_url() ?>assets/images/course_background/time management.jpg" width="256" height="216" alt="TIME MANAGEMENT">
                 <div class="card-body">
                     <h6 style="text-align: center" class="card-title">TIME MANAGEMENT</h6>
-                    <p style="text-align: center" class="card-text">Time management is the process of organising and planning how to divide your time between specific activities. Good time management enables you to work smarter.</p>
+                    <p style="text-align: center" class="card-text">Time management is the process of organizing and planning how to divide your time between specific activities. Good time management enables you to work smarter.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn how to prioritise</h6>
+                    <h6 style="text-align: center">Learn how to prioritize</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "2"): ?>
                             <div class="text">
@@ -138,7 +138,7 @@
                     <p style="text-align: center" class="card-text">Study strategy otherwise known as study skills refer to those things that individuals do when they have to locate, organize, and remember information.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn how to manage your stress</h6>
+                    <h6 style="text-align: center">Learn how to strategize </h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "1"): ?>
                             <div class="text">
@@ -164,7 +164,7 @@
                     <p style="text-align: center" class="card-text">If you are not focused, you won't be able to memorize new facts or recall information you memorized previously.  </p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn how to stay motivated</h6>
+                    <h6 style="text-align: center">Learn how to focus</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "3"): ?>
                             <div class="text">
@@ -184,7 +184,7 @@
                     <p style="text-align: center" class="card-text">Assignment writing can be both challenging and exciting. It involves several different processes such as research, planning, reflection etc.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn techniques for studying</h6>
+                    <h6 style="text-align: center">Learn writing styles</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "4"): ?>
                             <div class="text">
@@ -204,7 +204,7 @@
                     <p style="text-align: center" class="card-text">It is important to reference the sources you use so that the reader can follow your arguments and check your sources.<br><br></p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn tips for exams and test</h6>
+                    <h6 style="text-align: center">Learn the importance of referencing</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "5"): ?>
                             <div class="text">
@@ -227,7 +227,7 @@
                     <p style="text-align: center" class="card-text"> Note-taking is the process of organizing and writing pieces of information. Summarizing involves analyzing information and identifying the essential elements.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn to set achievable goals</h6>
+                    <h6 style="text-align: center">Learn how to take notes</h6>
                     <div class="text">
                         <a class="button" style="color:white;" href="<?php echo site_url() ?>/notetaking_">Start</a>
                     </div>
@@ -242,7 +242,7 @@
                     <p style="text-align: center" class="card-text">Presentation is a means of communication that can be adapted to various speaking situations, such as briefing a team.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn how to prioritise</h6>
+                    <h6 style="text-align: center">Learn to be a good presenter</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "2"): ?>
                             <div class="text">
@@ -259,11 +259,11 @@
             <div id="card2" class="card" style="width: 18rem;margin: auto">
                 <img class="card-img-top" style="-webkit-user-select: none;cursor: zoom-in;" src="<?php echo base_url() ?>assets/images/course_background/tips.png" width="256" height="216" alt="STRESS MANAGEMENT">
                 <div class="card-body">
-                    <h6 style="text-align: center" class="card-title">TIPS FOR EXAMS</h6>
+                    <h6 style="text-align: center" class="card-title">TIPS FOR EXAMS AND TESTS</h6>
                     <p style="text-align: center" class="card-text">Give yourself the best environment to focus in by choosing somewhere with enough light, a comfortable chair, and little to no distractions.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
-                    <h6 style="text-align: center">Learn how to manage your stress</h6>
+                    <h6 style="text-align: center">Learn exam and test tips</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "1"): ?>
                             <div class="text">

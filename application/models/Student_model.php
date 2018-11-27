@@ -223,8 +223,9 @@ class Student_model extends CI_Model {
         return $this->db->update('students', $data); 
             
     }
-    public function get_notes($stud_id) {
+    public function get_notes($stud_id,$topicID) {
       $this->db->where('studentID', $stud_id);
+   $this->db->where('topicID', $topicID);
         return $query = $this->db->get('note');   
     }
      public function update_notes($stud_id, $topicID, $desc) {
@@ -234,6 +235,21 @@ class Student_model extends CI_Model {
         return $this->db->update('note', $data); 
             
     }
+    public function get_all_notes($stud_id,$topicID) {
+   $this->db->where('studentID', $stud_id);
+   $this->db->where('topicID', $topicID);
+        return $query = $this->db->get('note');
+    }
+     public function insert_new_note($data) {
+        $this->db->insert('note', $data);
+
+        if ($this->db->affected_rows() > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+ 
+   }
     public function get_resources() {
         return $query = $this->db->get('resources');
     }
@@ -265,6 +281,11 @@ class Student_model extends CI_Model {
         return $data;
     }
 }
+
+
+
+
+
 
 
 
