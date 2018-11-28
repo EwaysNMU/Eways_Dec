@@ -47,6 +47,16 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('feedback/time_management');
         $this->load->view('layouts/footer_courses');
     }
+       public function time_management_video() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "2";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/time_management');
+        $this->load->view('layouts/footer_courses');
+    }
+
 
 //    Study Strategies----------------------------------------
     public function study_strategies() {
@@ -62,6 +72,24 @@ class All_Courses_controller extends CI_Controller {
     public function study_strategies_feedback() {
         $this->load->view('layouts/header_feedback');
         $this->load->view('feedback/study_strategies');
+        $this->load->view('layouts/footer_courses');
+    }
+     public function study_strategies_video1() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "3";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/study_strategy_1');
+        $this->load->view('layouts/footer_courses');
+    }
+     public function study_strategies_video2() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "3";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/study_strategy_2');
         $this->load->view('layouts/footer_courses');
     }
 
@@ -87,7 +115,8 @@ class All_Courses_controller extends CI_Controller {
     public function reference_correctly() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        $data['notes'] = $this->Student_model->get_notes($stud_id);
+        $topicID = "6";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/reference_correctly');
         $this->load->view('layouts/footer_courses');
@@ -121,7 +150,8 @@ class All_Courses_controller extends CI_Controller {
     public function notetaking() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        $data['notes'] = $this->Student_model->get_notes($stud_id);
+        $topicID = "7";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/note_taking');
         $this->load->view('layouts/footer_courses');
@@ -129,7 +159,16 @@ class All_Courses_controller extends CI_Controller {
 
     public function notetaking_feedback() {
         $this->load->view('layouts/header_feedback');
-        $this->load->view('feedback/notetaking');
+        $this->load->view('feedback/notetaking_&_summarising');
+        $this->load->view('layouts/footer_courses');
+    }
+    public function notetaking_video() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "7";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/note_taking');
         $this->load->view('layouts/footer_courses');
     }
 
@@ -138,7 +177,8 @@ class All_Courses_controller extends CI_Controller {
     public function presentations() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        $data['notes'] = $this->Student_model->get_notes($stud_id);
+        $topicID = "8";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/presentations');
         $this->load->view('layouts/footer_courses');
@@ -149,13 +189,23 @@ class All_Courses_controller extends CI_Controller {
         $this->load->view('feedback/presentations');
         $this->load->view('layouts/footer_courses');
     }
+    public function presentations_video() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "8";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/presentations');
+        $this->load->view('layouts/footer_courses');
+    }
 
     //    Tips for Exams--------------------------------------------
 
     public function tips_for_exams() {
         $stud_id = $this->session->userdata('studentID');
         $data['info2'] = $this->Student_model->get_profile($stud_id);
-        $data['notes'] = $this->Student_model->get_notes($stud_id);
+        $topicID = "9";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
         $this->load->view('layouts/header', $data);
         $this->load->view('course_views/tips_for_exams_and_tests');
         $this->load->view('layouts/footer_courses');
@@ -163,7 +213,7 @@ class All_Courses_controller extends CI_Controller {
 
     public function tips_for_exams_feedback() {
         $this->load->view('layouts/header_feedback');
-        $this->load->view('feedback/tips_for_exams');
+        $this->load->view('feedback/tips_for_exams_and_tests');
         $this->load->view('layouts/footer_courses');
     }
 
@@ -181,7 +231,16 @@ class All_Courses_controller extends CI_Controller {
 
     public function concentrating_memorizing_feedback() {
         $this->load->view('layouts/header_feedback');
-        $this->load->view('feedback/tips_for_exams');
+        $this->load->view('feedback/concentration_&_memorising');
+        $this->load->view('layouts/footer_courses');
+    }
+     public function concentrating_memorizing_video() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        $topicID = "4";
+        $data['notes'] = $this->Student_model->get_notes($stud_id,$topicID);
+        $this->load->view('layouts/header', $data);
+        $this->load->view('course_videos/concentrating_memorizing');
         $this->load->view('layouts/footer_courses');
     }
 
@@ -266,6 +325,7 @@ class All_Courses_controller extends CI_Controller {
         $stud_id = $this->session->userdata('studentID');
         $topicID = $this->input->post('topicID');
         $desc = $this->input->post('description');
+        $success = "Note Saved!";
 
         $data['info'] = $this->Student_model->get_all_notes($stud_id,$topicID);
         foreach ($data['info']->result() as $row) {
@@ -274,22 +334,46 @@ class All_Courses_controller extends CI_Controller {
         }
         if ($db_studentID == $stud_id && $db_topicID == $topicID) {
             $this->Student_model->update_notes($stud_id, $topicID, $desc);
-            echo json_encode(['comment_return' => 'Saved!']);
+           echo json_encode(['comment_return' => $success]);
         } else {
             $data_insert = array(
                 'topicID' => $topicID,
                 'description' => $desc,
                 'studentID' => $stud_id,
             );
-            if($this->Student_model->insert_new_note($data_insert))
-            {
-            echo json_encode(['comment_return' => 'Saved!']); 
-            }
+            $this->Student_model->insert_new_note($data_insert);
+            echo json_encode(['comment_return' => $success]); 
             
         }
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

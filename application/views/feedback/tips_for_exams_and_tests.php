@@ -5,7 +5,7 @@
     <?php $attributes = array('class' => 'was-validated', 'id' => 'tips_for_exams_feedback_answer'); ?>
     <?php echo form_open('tips_for_exams_feedback_answer_', $attributes); ?>
 
-    <input type="hidden" name="topic_id" value="6">
+    <input type="hidden" name="topic_id" value="9">
     <input type="hidden" name="student_id" value="<?php echo $this->session->userdata('studentID'); ?>">
 
     <p class="font-weight-bold">1. Did the course clearly explain what you were expected to learn from the course (i.e give learning objectives)?</p>
@@ -95,7 +95,7 @@
         <div class="invalid-feedback">Please select one of the above answer.</div>
         <p class="font-weight-bold">7.Any personal comment.</p>
         <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" rows="3" required></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" rows="3"></textarea>
             <div class="invalid-feedback">Please enter comment in the space above.</div>
         </div>
         <div>
@@ -104,6 +104,8 @@
         <?php echo form_close(); ?>
     </div>
     <br>
+
+
 
 
 

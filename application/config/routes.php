@@ -64,14 +64,18 @@ $route['post_note'] = 'all_courses_controller/post_note';
 $route['time_management_'] = 'all_courses_controller/time_management';
 $route['time_management_feedback_'] = 'all_courses_controller/time_management_feedback';
 $route['time_management_feedback_answer_'] = 'feedbacks_controller/time_management_feedback_answer';
+$route['time_management/video'] = 'all_courses_controller/time_management_video';
 
 $route['study_strategies_'] = 'all_courses_controller/study_strategies';
 $route['study_strategies_feedback_'] = 'all_courses_controller/study_strategies_feedback';
 $route['study_strategies_feedback_answer_'] = 'feedbacks_controller/study_strategies_feedback_answer';
+$route['study_strategies/video/1'] = 'all_courses_controller/study_strategies_video1';
+$route['study_strategies/video/2'] = 'all_courses_controller/study_strategies_video2';
 
 $route['concentration_'] = 'all_courses_controller/concentrating_memorizing' ;
-$route['concentration_feedback_'] = 'all_courses_controller/concentration_feedback';
+$route['concentration_memorizing_feedback_'] = 'all_courses_controller/concentrating_memorizing_feedback';
 $route['concentration_feedback_answer_'] = 'feedbacks_controller/concentration_feedback_answer';
+$route['concentration_memorizing/video'] = 'all_courses_controller/concentrating_memorizing_video' ;
 
 $route['assignment_writing_'] = 'all_courses_controller/assignment_writing';
 $route['assignment_writing_feedback_'] = 'all_courses_controller/assignment_writing_feedback';
@@ -84,13 +88,15 @@ $route['reference_correctly_feedback_answer_'] = 'feedbacks_controller/reference
 $route['notetaking_'] = 'all_courses_controller/notetaking';
 $route['notetaking_feedback_'] = 'all_courses_controller/notetaking_feedback';
 $route['notetaking_feedback_answer_'] = 'feedbacks_controller/notetaking_feedback_answer';
+$route['notetaking/video'] = 'all_courses_controller/notetaking_video';
 
 $route['presentations_'] = 'all_courses_controller/presentations';
 $route['presentations_feedback_'] = 'all_courses_controller/presentations_feedback';
 $route['presentations_feedback_answer_'] = 'feedbacks_controller/presentations_feedback_answer';
+$route['presentations/video'] = 'all_courses_controller/presentations_video';
 
 $route['tips_for_exams_'] = 'all_courses_controller/tips_for_exams';
-$route['tips_for_exams_feedback_'] = 'all_courses_controller/tips_for_exams_feedback';
+$route['tips_for_exams_and_tests_feedback_'] = 'all_courses_controller/tips_for_exams_feedback';
 $route['tips_for_exams_feedback_answer_'] = 'feedbacks_controller/tips_for_exams_feedback_answer';
 
 $route['user_profile_'] = 'all_courses_controller/user_profile';

@@ -3,82 +3,68 @@
 <h2 style="text-align:center">Goal Setting</h2>
 <div class="container">
     <div class="mySlides">
-        <div style="color: black" class="numbertext">1 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide1.jpg" style="width:100%;">
+        <div style="color: black" class="numbertext">1 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">2 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/1.jpg" style="width:100%;">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">2 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide2.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">3 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">3 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide3.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">4 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/3.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">4 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide4.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">5 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/4.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">5 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide5.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">6 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/5.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">6 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide6.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">7 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/6.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">7 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide7.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">8 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/7.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">8 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide8.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">9 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/8.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">9 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide9.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">10 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/9.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">10 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide10.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">11 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/10.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">11 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide11.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">12 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/11.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">12 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide12.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">13 / 13</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/12.jpg" style="width:100%">
     </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">13 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide13.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">14 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide14.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">15 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide15.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">16 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide16.jpg" style="width:100%">
-    </div>
-
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
     <br>
 </div>
 <br>
 <div class="wrapper">
+    <a onclick="plusSlides(-1)" style="cursor:pointer; color: green"><i class="fa fa-backward" aria-hidden="true"></i> Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="plusSlides(1)" style="cursor:pointer;color: green">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
     <div class="timer-container" id="#run-the-timer">
         This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href = '<?php echo site_url() ?>/goals_setting_feedback_'" target="_blank" value=" Finish "/>
     </div>
@@ -100,12 +86,15 @@
                         <div class="accordion-inner"><br>
                             <div id="value" style="color: #4CAF50"></div>
                             <form name="submit">
-                                <input  name="topicID" id="topicID" type="number" value="1">
-                                <?php foreach ($notes->result() as $note) { ?>
-                                    <?php if ($note->topicID === "1"): ?> 
+                                <input hidden name="topicID" id="topicID" type="number" value="1">
+                                <?php if(empty($notes->result())): ?>
+                                <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus></textarea>
+                                <?php else: ?>
+                                <?php foreach ($notes->result() as $note) { ?> 
                                 <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus><?php echo $note->description ?></textarea>
-                                    <?php endif ?>
+                                    
                                 <?php } ?>
+                                <?php endif ?>
                                 <input style="margin-top: 5px" name="submit" value="save" type="submit" class="btn-submit pull-right submit btn-info">
                             </form>
                         </div>

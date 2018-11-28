@@ -43,13 +43,12 @@
     <div style="color: black" class="numbertext">9 / 9</div>
     <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide9.jpg" style="width:100%">
   </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
   <br>
 </div>
 <br>
 <div class="wrapper">
+    <a onclick="plusSlides(-1)" style="cursor:pointer; color: green"><i class="fa fa-backward" aria-hidden="true"></i> Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a onclick="plusSlides(1)" style="cursor:pointer;color: green">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
     <div class="timer-container" id="#run-the-timer">
 This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/tips_for_exams_and_tests_feedback_'" target="_blank" value=" Finish "/>
 </div>
@@ -70,8 +69,15 @@ This button will be enabled in <span class="minute">10</span>:<span class="secon
                         <div class="accordion-inner"><br>
                             <div id="value" style="color: #4CAF50"></div>
                             <form name="submit">
+                                <input hidden name="topicID" id="topicID" type="number" value="9">
+                                <?php if(empty($notes->result())): ?>
                                 <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus></textarea>
-
+                                <?php else: ?>
+                                <?php foreach ($notes->result() as $note) { ?> 
+                                <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus><?php echo $note->description ?></textarea>
+                                    
+                                <?php } ?>
+                                <?php endif ?>
                                 <input style="margin-top: 5px" name="submit" value="save" type="submit" class="btn-submit pull-right submit btn-info">
                             </form>
                         </div>

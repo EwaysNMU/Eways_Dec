@@ -15,4 +15,8 @@ $(document).ready(function () {
                     jQuery("div#value").html(localStorage.getItem("p_Updated"));
                     localStorage.clear("p_Updated");
                 }
+                else if(localStorage.getItem("note_saved") === "Note Saved!"){
+                    jQuery("div#value").html(localStorage.getItem("note_saved"));
+                    localStorage.clear("note_saved");
+                }
                 });

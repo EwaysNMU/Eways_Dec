@@ -8,8 +8,6 @@ $(document).ready(function () {
         if (comment_post === "")
         {
             alert("The note field is required before saving");
-//            jQuery("div#value").show();
-//            jQuery("div#value").html(comment_post + "This field is required or press the space bar");
             return false;
         } else {
 
@@ -28,7 +26,9 @@ $(document).ready(function () {
                         jQuery("div#value").show();
                         $('div#value').delay(5000).fadeOut(400);
                         jQuery("div#value").html(res.comment_return);
-                        jQuery("textarea#description").html(res.comment_post);
+//                        var getInput_notes =  jQuery("div#value").html(res.comment_return);
+//                        localStorage.setItem("note_saved", getInput_notes);
+                        jQuery("textarea#description").html(res.comment_post); 
                     } else {
                         jQuery("div#value").show();
                         jQuery("div#value").html(res.error);

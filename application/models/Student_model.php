@@ -241,7 +241,7 @@ class Student_model extends CI_Model {
         return $query = $this->db->get('note');
     }
      public function insert_new_note($data) {
-        $this->db->insert('note', $data);
+       $this->db->insert('note', $data);
 
         if ($this->db->affected_rows() > 0) {
             return TRUE;
@@ -281,6 +281,8 @@ class Student_model extends CI_Model {
         return $data;
     }
 }
+
+
 
 
 

@@ -2,57 +2,59 @@
 <br>
 <h2 style="text-align:center">Time Management</h2>
 <div class="container">
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">1 / 10</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
   <div class="mySlides">
-    <div style="color: black" class="numbertext">1 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide1.jpg" style="width:100%;">
+    <div style="color: black" class="numbertext">2 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/1.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">2 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide2.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">3 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">3 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide3.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">4 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/3.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">4 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide4.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">5 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/4.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">5 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide5.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">6 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/5.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">6 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide6.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">7 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/6.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">7 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide7.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">8 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/7.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">8 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide8.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">9 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/8.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">9 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide9.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">10 / 10</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/time_management/9.jpg" style="width:100%">
   </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
   <br>
-
 </div>
 <br>
 <div class="wrapper">
+    <a onclick="plusSlides(-1)" style="cursor:pointer; color: green"><i class="fa fa-backward" aria-hidden="true"></i> Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a onclick="plusSlides(1)" style="cursor:pointer;color: green">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
     <div class="timer-container" id="#run-the-timer">
-This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/time_management_feedback_'" target="_blank" value=" Finish "/>
+This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/time_management/video'"  value=" Next "/>
 </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">&nbsp;<i style="color:black"class="fa fa-angle-double-up"></i>&nbsp;</button>

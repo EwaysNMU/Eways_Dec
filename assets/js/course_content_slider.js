@@ -31,3 +31,4 @@ var slideIndex = 1;
         captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 
+

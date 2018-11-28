@@ -1,56 +1,16 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_detail.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_videos.css">
 <br>
 <h2 style="text-align:center">Study Strategy</h2>
 <div class="container">
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">1 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide1.jpg" style="width:100%;">
-  </div>
-
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">2 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">3 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide3.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">4 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide4.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">5 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide5.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div style="color: black" class="numbertext">6 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide6.jpg" style="width:100%">
-  </div>
-    <div class="mySlides">
-    <div style="color: black" class="numbertext">7 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide7.jpg" style="width:100%">
-  </div>
-    <div class="mySlides">
-    <div style="color: black" class="numbertext">8 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide8.jpg" style="width:100%">
-  </div>
-    <div class="mySlides">
-    <div style="color: black" class="numbertext">9 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide9.jpg" style="width:100%">
-  </div>
-  <br>
+  <div id="file" class="form-group resp-container">
+        <iframe  class="resp-iframe" src="https://drive.google.com/file/d/16DHqSjEdgl_pWH7oaXXWV8se1F-BNZ1m/preview" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </div>
 <br>
 <div class="wrapper">
-    <a onclick="plusSlides(-1)" style="cursor:pointer; color: green"><i class="fa fa-backward" aria-hidden="true"></i> Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a onclick="plusSlides(1)" style="cursor:pointer;color: green">Next <i class="fa fa-forward" aria-hidden="true"></i></a>
     <div class="timer-container" id="#run-the-timer">
-This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/study_strategies/video/1'" value=" Next "/>
+This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/study_strategies/video/2'" value=" Next "/>
 </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">&nbsp;<i style="color:black"class="fa fa-angle-double-up"></i>&nbsp;</button>
@@ -107,5 +67,4 @@ x.removeAttribute("disabled");
 
 setTimeout("enable()", 6000);
     </script>
-<script type="text/javascript"  src="<?php echo base_url() ?>/assets/js/course_content_slider.js"></script>
 <script type="text/javascript"  src="<?php echo base_url() ?>/assets/js/back_to_top.js"></script>

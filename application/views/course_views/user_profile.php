@@ -56,37 +56,55 @@
                                 <?php foreach ($info3->result() as $progress) { ?>
                                     <?php if ($progress->countTopic == "1" && $progress->completed == "Yes"): ?>
                                         <div class="progress" style="height:5px">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="16"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:16%; height: 200%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="11"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:11%; height: 200%">
                                             </div>
-                                        </div><p>16% Complete</p>     
+                                        </div><p>11% Complete</p>     
                                     <?php elseif ($progress->countTopic == "2"): ?>
 
                                         <div id="div2" class="progress" style="height:5px">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="32"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:32%; height: 200%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="22"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:22%; height: 200%">
                                             </div>
-                                        </div><p>32% Complete</p>
+                                        </div><p>22% Complete</p>
                                     <?php elseif ($progress->countTopic == "3"): ?>
                                         <div id="div3" class="progress" style="height:5px">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="48"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:48%; height: 200%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="33"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:33%; height: 200%">
                                             </div>
-                                        </div><p>48% Complete</p>
+                                        </div><p>33% Complete</p>
                                     <?php elseif ($progress->countTopic == "4"): ?>
                                         <div id="div4" class="progress" style="height:5px">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="64"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:64%; height: 200%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="44"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:44%; height: 200%">
                                             </div>
-                                        </div><p>64% Complete</p>
+                                        </div><p>44% Complete</p>
                                     <?php elseif ($progress->countTopic == "5"): ?>
                                         <div id="div5" class="progress" style="height:5px">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
-                                                 aria-valuemin="0" aria-valuemax="100" style="width:80%; height: 200%">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="55"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:55%; height: 200%">
                                             </div>
-                                        </div><p>80% Complete</p>
+                                        </div><p>55% Complete</p>
                                     <?php elseif ($progress->countTopic == "6"): ?>
                                         <div id="div6" class="progress" style="height:5px"> 
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:66%; height: 200%">
+                                            </div>
+                                        </div><p>66% Complete</p>
+                                    <?php elseif ($progress->countTopic == "7"): ?>
+                                        <div id="div7" class="progress" style="height:5px"> 
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:77%; height: 200%">
+                                            </div>
+                                        </div><p>77% Complete</p>
+                                    <?php elseif ($progress->countTopic == "8"): ?>
+                                        <div id="div8" class="progress" style="height:5px"> 
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="88"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:88%; height: 200%">
+                                            </div>
+                                        </div><p>88% Complete</p>
+                                    <?php elseif ($progress->countTopic == "9"): ?>
+                                        <div id="div9" class="progress" style="height:5px"> 
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
                                                  aria-valuemin="0" aria-valuemax="100" style="width:100%; height: 200%">
                                             </div>
