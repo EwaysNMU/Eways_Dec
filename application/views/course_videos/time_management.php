@@ -4,7 +4,9 @@
 <h2 style="text-align:center">Time Management</h2>
 <div class="container">
     <div id="file" class="form-group resp-container">
-        <iframe  class="resp-iframe" src="https://drive.google.com/file/d/1TCrktM7u1WUJl8ky5m20Ki2i9KPFZRJU/preview" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  class="resp-iframe" src="https://drive.google.com/file/d/1TCrktM7u1WUJl8ky5m20Ki2i9KPFZRJU/preview" frameborder="0" scrolling="no" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div style="width: 80px; height: 80px; position: absolute; opacity: 0; right: 0px; top: 0px;">
     </div>
 </div>
 <br>

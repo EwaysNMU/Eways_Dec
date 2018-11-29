@@ -3,73 +3,97 @@
 <h2 style="text-align:center">Reference Correctly</h2>
 <div class="container">
     <div class="mySlides">
-        <div style="color: black" class="numbertext">1 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide1.jpg" style="width:100%;">
+        <div style="color: black" class="numbertext">1 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">2 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/1.jpg" style="width:100%;">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">2 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide2.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">3/ 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">3 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide3.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">4 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/3.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">4 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide4.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">5 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/4.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">5 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide5.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">6 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/5.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">6 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide6.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">7 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/6.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">7 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide7.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">8 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/7.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">8 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide8.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">9 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/8.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">9 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide9.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">10 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/9.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">10 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide10.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">11 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/10.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">11 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide11.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">12 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/11.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">12 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide12.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">13 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/12.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">13 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide13.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">14 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/13.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">14 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide14.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">15 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/14.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">15 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide15.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">16 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/15.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">16 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide16.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">17 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/16.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">18 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/17.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">19 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/18.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">20 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/19.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+        <div style="color: black" class="numbertext">21 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/20.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+        <div style="color: black" class="numbertext">22 / 22</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/refrencing/21.jpg" style="width:100%">
     </div>
     <br>
 </div>

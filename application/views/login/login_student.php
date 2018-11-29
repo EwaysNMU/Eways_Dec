@@ -33,6 +33,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 height:100%;
                 width:100%;
             }
+    #login_signup_forgot_btn {
+        background-color: #103A5C; /* Mandela Blue */
+        border: none;
+        border-radius: 0%;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+    }
+     #login_signup_forgot_btn:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#FDB819 /*Mandela yellow */;}
         </style>
     </head>
     <body>
@@ -94,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <!-- <span class="custom-control-description small text-dark">Remember me on this computer</span> -->
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                        <button type="submit" class="btn btn-success btn-lg float-right" id="login_signup_forgot_btn">Login</button>
                                     </form>
                                     <a href="<?php echo site_url() ?>/reset_password" class="float-left">Forgot Password?</a><br>
                                     <a href="<?php echo site_url() ?>/student_register_form" class="float-left">New User? Register here</a><br>

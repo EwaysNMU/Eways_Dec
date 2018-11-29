@@ -1,79 +1,8 @@
+<link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_list_home.css">
+<body style="background-color: #F5F5F5">
 <br><br><br><br>
 <style>
-    .image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #F2F2F2;
-    }
-
-    #card1:hover .overlay, #card2:hover .overlay, #card3:hover .overlay, #card4:hover .overlay, 
-    #card5:hover .overlay, #card6:hover .overlay
-    {
-        opacity: 1;
-    }
-    #card1, #card2, #card3, #card4, #card5, #card6
-    {
-        background-color: #F2F2F2
-    }
-
-    .text {
-        color: Black;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    .button {
-        background-color: #103A5C; /* Mandela Blue */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-    .button:hover {
-        text-decoration: none;
-        background-color:#FDB819 /*Mandela yellow */;
-    }
-    #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: #EEAE2C;
-        color: white;
-        cursor: pointer;
-        width:50px;
-        height: 50px;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    #myBtn:hover {
-        background-color: #555;
-    }
+    
 </style>
 
 
@@ -103,7 +32,7 @@
                 <div class="overlay"><br><br><br><br><br><br>
                     <h6 style="text-align: center">Learn how to set achievable goals</h6>
                     <div class="text">
-                        <a class="button" style="color:white;" href="<?php echo site_url() ?>/goals_setting_">Start</a>
+                        <a class="button" href="<?php echo site_url() ?>/goals_setting_">Start</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +49,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "1"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/time_management_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/time_management_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -141,7 +70,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "2"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/study_strategies_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/study_strategies_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -167,7 +96,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "3"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/concentration_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/concentration_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -179,15 +108,15 @@
             <div id="card5" class="card" style="width: 18rem;margin: auto">
                 <img class="card-img-top" style="-webkit-user-select: none;cursor: zoom-in;" src="<?php echo base_url() ?>assets/images/course_background/assignment_writing.jpg" width="256" height="216" alt="ASSIGNMENT WRITING">
                 <div class="card-body">
-                    <h6 style="text-align: center" class="card-title">ASSIGNMENT WRITING</h6>
-                    <p style="text-align: center" class="card-text">Assignment writing can be both challenging and exciting. It involves several different processes such as research, planning, reflection etc.</p>
+                    <h6 style="text-align: center" class="card-title">ACADEMIC WRITING</h6>
+                    <p style="text-align: center" class="card-text">Academic writing can be both challenging and exciting. It involves several different processes such as research, planning, reflection etc.</p>
                 </div>
                 <div class="overlay"><br><br><br><br><br><br>
                     <h6 style="text-align: center">Learn writing styles</h6>
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "4"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/assignment_writing_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/assignment_writing_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -207,7 +136,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "5"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/reference_correctly_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/reference_correctly_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -230,7 +159,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "6"): ?>
                     <div class="text">
-                        <a class="button" style="color:white;" href="<?php echo site_url() ?>/notetaking_">Start</a>
+                        <a class="button"  href="<?php echo site_url() ?>/notetaking_">Start</a>
                     </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -250,7 +179,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "7"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/presentations_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/presentations_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>
@@ -271,7 +200,7 @@
                     <?php foreach ($info->result() as $value) { ?>
                         <?php if ($value->completed == "Yes" && $value->topicID === "8"): ?>
                             <div class="text">
-                                <a class="button" style="color:white;"href="<?php echo site_url() ?>/tips_for_exams_">Start</a>
+                                <a class="button" href="<?php echo site_url() ?>/tips_for_exams_">Start</a>
                             </div>
                         <?php else: ?>
                         <?php endif ?>

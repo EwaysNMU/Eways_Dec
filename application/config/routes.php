@@ -118,21 +118,22 @@ $route['send_link'] = 'ForgotPassword_Controller/send_reset_link';
 $route['reset_password_/(.*)'] = 'ForgotPassword_Controller/reset_password_form/$1';
 $route['password_reset'] = 'ForgotPassword_Controller/update_password';
 $route['error_page'] = 'ForgotPassword_Controller/forgot_password_error';
-$route['community'] = 'test_controller/chat_view';
-$route['community/time_management'] = 'test_controller/chat_question_list';
-$route['community/time_management/How'] = 'test_controller/chat_question_details';
-$route['chat/time_management/post'] = 'test_controller/post_comment';
-$route['chat/discussion/post'] = 'test_controller/post_discussion';
-$route['discussion/(.*)'] = 'test_controller/discussion_detail/$1';
-$route['chat/time_management/table'] = 'test_controller/chat_table';
-$route['chat/post_comment'] = 'test_controller/post_comment';
-$route['chat/conversation/(.*)'] = 'test_controller/chat_conversation/$1';
-$route['chat/comment'] = 'test_controller/chat_comment/';
-$route['community/user/post'] = 'test_controller/chat_user_post';
-$route['user/get/details/(.*)'] = 'test_controller/chat_user_post_edit/$1';
-$route['user/delete/post/(.*)'] = 'test_controller/chat_user_post_delete/$1';
-$route['user/edit/post'] = 'test_controller/chat_user_post_update';
-$route['user/edit/post/update'] = 'test_controller/update_discussion';
+//COMMUNITY
+$route['community'] = 'chat_controller/chat_view';
+$route['community/time_management'] = 'chat_controller/chat_question_list';
+$route['community/time_management/How'] = 'chat_controller/chat_question_details';
+$route['chat/time_management/post'] = 'chat_controller/post_comment';
+$route['chat/discussion/post'] = 'chat_controller/post_discussion';
+$route['discussion/(.*)'] = 'chat_controller/discussion_detail/$1';
+$route['chat/time_management/table'] = 'chat_controller/chat_table';
+$route['chat/post_comment'] = 'chat_controller/post_comment';
+$route['chat/conversation/(.*)'] = 'chat_controller/chat_conversation/$1';
+$route['chat/comment'] = 'chat_controller/chat_comment/';
+$route['community/user/post'] = 'chat_controller/chat_user_post';
+$route['user/get/details/(.*)'] = 'chat_controller/chat_user_post_edit/$1';
+$route['user/delete/post/(.*)'] = 'chat_controller/chat_user_post_delete/$1';
+$route['user/edit/post'] = 'chat_controller/chat_user_post_update';
+$route['user/edit/post/update'] = 'chat_controller/update_discussion';
 
 
 

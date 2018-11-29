@@ -57,7 +57,7 @@
 This button will be enabled in <span class="minute">10</span>:<span class="second">00</span>&nbsp;&nbsp;&nbsp;<input title="button will be enable soon" id="mybutton" disabled type="button" onclick="location.href='<?php echo site_url() ?>/time_management/video'"  value=" Next "/>
 </div>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top">&nbsp;<i style="color:black"class="fa fa-angle-double-up"></i>&nbsp;</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&nbsp;<i id="direct_up" style="color:black"class="fa fa-angle-double-up"></i>&nbsp;</button>
 <br>
 <div class="container " style="max-width: 800px; min-width: 200px; margin: auto;">
     <div class="col-sm-12">

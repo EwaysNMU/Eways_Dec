@@ -2,47 +2,112 @@
 <br>
 <h2 style="text-align:center">Tips For Exams and Tests</h2>
 <div class="container">
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">1 / 25</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
   <div class="mySlides">
-    <div style="color: black" class="numbertext">1 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide1.jpg" style="width:100%;">
+    <div style="color: black" class="numbertext">2 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/1.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">2 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide2.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">3 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">3 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide3.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">4 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/3.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">4 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide4.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">5 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/4.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">5 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide5.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">6 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/5.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">6 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide6.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">7/ 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/6.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">7 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide7.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">8 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/7.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">8 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide8.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">9 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/8.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">9 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide9.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">10 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/9.jpg" style="width:100%">
   </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">11 / 9</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/10.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">12 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/11.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">13 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/12.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">14 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/13.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">15 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/14.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">16 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/15.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">17 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/16.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">18 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/17.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">19 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/18.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">20 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/19.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">21 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/20.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">22 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/21.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">23 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/22.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">24 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/23.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">25 / 25</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/tips_for_exam_test/24.jpg" style="width:100%">
+  </div>
+    
   <br>
 </div>
 <br>

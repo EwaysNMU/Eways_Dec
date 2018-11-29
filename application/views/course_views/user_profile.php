@@ -1,4 +1,22 @@
-
+<body style="background-color: #F5F5F5">
+<style>
+    #profile_btn {
+        background-color: #103A5C; /* Mandela Blue */
+        border: none;
+        border-radius: 0%;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+    }
+    #profile_btn:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#FDB819 /*Mandela yellow */;
+    }
+</style>
 <?php if ($this->session->flashdata('flash_profile')): ?>
     <script>
         swal({
@@ -176,7 +194,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <br>
-                                            <button name ="upload" class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                            <button id="profile_btn" name ="upload" class="btn btn-lg btn-success" type="submit"> Save</button>
                                         </div>
                                     </div>
                                 </div>
@@ -192,26 +210,5 @@
 </form>
 <?php endif ?>
                         <?php } ?> 
-<!--<script>
-    $(document).ready(function () {
-
-
-        var readURL = function (input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('.avatar').attr('src', e.target.result);
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
-        };
-
-
-        $(".file-upload").on('change', function () {
-            readURL(this);
-        });
-    });
-</script>-->
 
 

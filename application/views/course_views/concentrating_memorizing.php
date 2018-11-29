@@ -2,46 +2,106 @@
 <br>
 <h2 style="text-align:center">Concentrating & Memorizing</h2>
 <div class="container">
+      <div class="mySlides">
+        <div style="color: black" class="numbertext">1 / 24</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
   <div class="mySlides">
-    <div style="color: black" class="numbertext">1 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide1.jpg" style="width:100%;">
+    <div style="color: black" class="numbertext">2 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/1.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">2 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide2.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">3 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">3 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide3.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">4 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/3.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">4 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide4.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">5 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/4.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">5 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide5.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">6 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/5.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">6 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide6.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">7 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/6.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">7 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide7.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">8 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/7.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">8 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide8.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">9 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/8.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">9 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/stress_management/slide9.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">10 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/9.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">11 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/10.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">12 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/11.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">13 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/12.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">14 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/13.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">15 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/14.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">16 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/15.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">17 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/16.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">18 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/17.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">19 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/18.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">20 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/19.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">21 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/20.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">22 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/21.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">23 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/22.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">24 / 24</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/concentration/23.jpg" style="width:100%">
   </div>
   <br>
 </div>

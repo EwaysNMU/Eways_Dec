@@ -1,47 +1,55 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_detail.css">
 <br>
-<h2 style="text-align:center">Study Strategy</h2>
+<h2 style="text-align:center">Study Strategies</h2>
 <div class="container">
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">1 / 11</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
   <div class="mySlides">
-    <div style="color: black" class="numbertext">1 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide1.jpg" style="width:100%;">
+    <div style="color: black" class="numbertext">2 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/1.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">2 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide2.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">3 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">3 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide3.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">4 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/3.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">4 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide4.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">5 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/4.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div style="color: black" class="numbertext">5 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide5.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">6 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/5.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div style="color: black" class="numbertext">6 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide6.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">7 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/6.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">7 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide7.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">8 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/7.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">8 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide8.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">9 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/8.jpg" style="width:100%">
   </div>
     <div class="mySlides">
-    <div style="color: black" class="numbertext">9 / 9</div>
-    <img src="<?php echo base_url() ?>assets/images/topics/time_management/slide9.jpg" style="width:100%">
+    <div style="color: black" class="numbertext">10 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/9.jpg" style="width:100%">
+  </div>
+    <div class="mySlides">
+    <div style="color: black" class="numbertext">11 / 11</div>
+    <img src="<?php echo base_url() ?>assets/images/topics/study_strategies/10.jpg" style="width:100%">
   </div>
   <br>
 </div>

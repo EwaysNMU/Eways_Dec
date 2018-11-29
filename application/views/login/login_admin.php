@@ -33,6 +33,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 height:100%;
                 width:100%;
             }
+                #login_signup_forgot_btn {
+        background-color: #103A5C; /* Mandela Blue */
+        border: none;
+        border-radius: 0%;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+    }
+     #login_signup_forgot_btn:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#FDB819 /*Mandela yellow */;}
         </style>
     </head>
     <body>
@@ -80,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <span class="custom-control-indicator"></span>
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                        <button type="submit" class="btn btn-success btn-lg float-right" id="login_signup_forgot_btn">Login</button>
                                     </form>
                                     <a href="<?php echo site_url() ?>/admin/forgot_password" class="float-left">Forgot Password?</a><br>
                                     <a href="<?php echo site_url() ?>/home" class="float-left">Return Home</a>
@@ -100,7 +115,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script>
-            $("#btnLogin").click(function (event) {
+            $("#login_signup_forgot_btn").click(function (event) {
             var textarea = document.getElementById('username');
                     var word = '@mandela.ac.za';
                     var textValue = textarea.value; //-> don't use .innerHTML since there is no HTML in a textarea element

@@ -3,73 +3,69 @@
 <h2 style="text-align:center">Making Better Presentations</h2>
 <div class="container">
     <div class="mySlides">
-        <div style="color: black" class="numbertext">1 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide1.jpg" style="width:100%;">
+        <div style="color: black" class="numbertext">1 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/school_logo.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div style="color: black" class="numbertext">2 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/1.jpg" style="width:100%;">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">2 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide2.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">3 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">3 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide3.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">4 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/3.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">4 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide4.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">5 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/4.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">5 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide5.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">6 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/5.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <div style="color: black" class="numbertext">6 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide6.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">7 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/6.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">7 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide7.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">8 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/7.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">8 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide8.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">9 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/8.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">9 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide9.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">10 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/9.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">10 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide10.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">11 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/10.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">11 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide11.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">12 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/11.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">12 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide12.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">13 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/12.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">13 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide13.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">14 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/13.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-        <div style="color: black" class="numbertext">14 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide14.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">15 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide15.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-        <div style="color: black" class="numbertext">16 / 16</div>
-        <img src="<?php echo base_url() ?>assets/images/topics/goal_setting/slide16.jpg" style="width:100%">
+        <div style="color: black" class="numbertext">15 / 15</div>
+        <img src="<?php echo base_url() ?>assets/images/topics/presentations/14.jpg" style="width:100%">
     </div>
     <br>
 </div>

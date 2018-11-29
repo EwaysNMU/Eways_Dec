@@ -20,6 +20,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 padding-bottom: 100px;
                 background-color: #081E2F;
             }
+                #login_signup_forgot_btn {
+        background-color: #103A5C; /* Mandela Blue */
+        border: none;
+        border-radius: 0%;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+    }
+     #login_signup_forgot_btn:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#FDB819 /*Mandela yellow */;}
         </style>
   <style>
     #form label{float:left; width:140px;}
@@ -59,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <input hidden type="text" name="reset_token" id="reset_token" value="<?php echo $seg2; ?>"required><br>
                         <div class="form-group">
-                            <button disabled id="btnLogin" type="submit" class="btn btn-success btn-lg float-right">Reset</button>
+                            <button disabled id="login_signup_forgot_btn" type="submit" class="btn btn-success btn-lg float-right">Reset</button>
                         </div>
                     </form>
                 </div>
@@ -75,10 +90,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        function check_pass() {
     if (document.getElementById('password').value === document.getElementById('confirm_password').value) {
         $('#message').html('Matching').css('color', 'green');
-        document.getElementById('btnLogin').disabled = false;
+        document.getElementById('login_signup_forgot_btn').disabled = false;
     } else {
          $('#message').html('Not Matching').css('color', 'red');
-        document.getElementById('btnLogin').disabled = true;
+        document.getElementById('login_signup_forgot_btn').disabled = true;
     }
 }
         </script>  

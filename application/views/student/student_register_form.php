@@ -15,6 +15,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         .mandelacolor {
             background-color: #103A5C;
         }
+            #login_signup_forgot_btn {
+        background-color: #103A5C; /* Mandela Blue */
+        border: none;
+        border-radius: 0%;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+    }
+     #login_signup_forgot_btn:hover {
+        text-decoration: none;
+        color: black;
+        background-color:#FDB819 /*Mandela yellow */;}
         </style>
 
         <title>EWAYS</title>
@@ -125,11 +140,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div>
-                <button type="submit" class="btn btn-primary  float-right">Submit</button>
+                <button id="login_signup_forgot_btn" type="submit" class="btn btn-primary  float-right">Submit</button>
             </div>
             <?php echo form_close(); ?>
             &emsp;&emsp;&emsp;&emsp;<a href="<?php echo site_url() ?>/home" class="btn float-right" role="button">Cancel</a>
-        </div>
+        </div><br><br>
         <script type="text/javascript">
             var depArt = ["Architecture", "Governmental and Social Sciences", "Language, Media & Communication", "Music, Art & Design"];
             var depBusiness = ["Business School", "Industrial Psychology and Human Resources", "Accounting", "Economics, Development and Tourism", "Management Sciences"];
@@ -192,6 +207,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+
+
 
 
 

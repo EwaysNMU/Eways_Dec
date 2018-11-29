@@ -96,7 +96,7 @@
         }
     }
 </script>
-<body style="background-color: #E0E1E2">
+<body style="background-color: #F5F5F5">
 <br><br>
 <div style="margin-bottom: 400px;" class="container">
 

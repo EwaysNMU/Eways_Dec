@@ -91,7 +91,7 @@
         }
     }
 </script>
-<body style="background-color: #E0E1E2">
+<body style="background-color: #F5F5F5">
     <div style="margin-bottom: 400px;">
 
         <!-- Page Heading -->
@@ -100,7 +100,7 @@
         </h4>
         <div class="row">
             <div id="div-media" class="col-lg-8 col-sm-8 portfolio-item">
-                <div style="background-color:#EFF0F1;border-radius: 1%;padding-left: 20px;padding-top: 5px;padding-bottom: 5px"><?php echo $this->input->get('body') ?><br></div>
+                <div style="background-color:#d7d8d8;border-radius: 1%;padding-left: 20px;padding-top: 5px;padding-bottom: 5px"><?php echo $this->input->get('body') ?><br></div>
                 <?php if($meg5 != "Closed"):?>
                 <small><a id="qstBT" href="#" onclick="myFunction()">Post a Comment</a></small><br>
                 <?php endif?>

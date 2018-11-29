@@ -1,6 +1,6 @@
 <br><br><br>
 <div class="container">
-    <h2 class="text-center">ASSIGNMENT WRITING FEEDBACK</h2><br>
+    <h2 class="text-center">ACADEMIC WRITING FEEDBACK</h2><br>
 
     <?php $attributes = array('class' => 'was-validated', 'id' => 'assignment_writing_feedback_answer'); ?>
     <?php echo form_open('assignment_writing_feedback_answer_', $attributes); ?>
