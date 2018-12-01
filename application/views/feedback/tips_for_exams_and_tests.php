@@ -99,11 +99,19 @@
             <div class="invalid-feedback">Please enter comment in the space above.</div>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary  float-right">Submit</button>
+            <button id="feedback_btn" type="submit" class="btn btn-primary  float-right">Submit</button>
         </div>
         <?php echo form_close(); ?>
     </div>
-    <br>
+    <br><br><br>
+
+
+
+
+
+
+
+
 
 
 

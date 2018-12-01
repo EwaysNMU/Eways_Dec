@@ -326,28 +326,13 @@ class All_Courses_controller extends CI_Controller {
         $topicID = $this->input->post('topicID');
         $desc = $this->input->post('description');
         $success = "Note Saved!";
-
-        $data['info'] = $this->Student_model->get_all_notes($stud_id,$topicID);
-        foreach ($data['info']->result() as $row) {
-            $db_topicID = $row->topicID;
-            $db_studentID = $row->studentID;
-        }
-        if ($db_studentID == $stud_id && $db_topicID == $topicID) {
-            $this->Student_model->update_notes($stud_id, $topicID, $desc);
-           echo json_encode(['comment_return' => $success]);
-        } else {
-            $data_insert = array(
-                'topicID' => $topicID,
-                'description' => $desc,
-                'studentID' => $stud_id,
-            );
-            $this->Student_model->insert_new_note($data_insert);
-            echo json_encode(['comment_return' => $success]); 
-            
-        }
+        $this->Student_model->update_notes($stud_id, $topicID, $desc);
+        echo json_encode(['comment_return' => $success]);
     }
 
 }
+
+
 
 
 

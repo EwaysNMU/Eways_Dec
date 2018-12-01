@@ -55,15 +55,25 @@
 
         <!-- About Us -->
             <section class="testimonials text-center bg-light">
-                <h1>About us</h1><br>
+<!--                <h1>About us</h1><br>-->
                 <div class="container">
-        
+                    <br>
                 <div class="row">
-                  <div class="col-lg-12">
-                    <div class="testimonial-item mx-auto mb-5 mb-lg-8">
-                      <p class="font-weight-light mb-0">The Centre for Teaching, Learning & Media (CTLM) is a unit within Higher Education Access and Development Services (HEADS) at NMU. HEADS aims to uphold the broader NMU educational purpose and philosophy: to provide transformational leadership in the service of society through teaching development and related research, and to adopt a humanising pedagogical approach that embraces diverse knowledge traditions and engages them in critical dialogue in order to contribute to a multi-cultural society. HEADS aspires to provide institution-wide and research-led services and programmes that focus on optimising human potential and play a role in higher education transformation by enhancing teaching and learning at NMU.</p>
-                    </div>
-                  </div>
+                      <div class="col-lg-4 col-sm-6 text-center mb-4"> 
+                          <img class="rounded-circle img-fluid d-block mx-auto" style="height: 300px; width: 300px" src="<?php echo base_url() ?>assets/images/home/nelson_mandela.jpg" alt="Nelson-Mandela">
+                          <h4>Nelson Mandela</h4>
+                          <p><q>There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living.</q></p>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 text-center mb-4">
+                          <img class="rounded-circle img-fluid d-block mx-auto" style="height: 280px; width: 280px" src="<?php echo base_url() ?>assets/images/home/albert_Einstein.jpg" alt="Albert-Einstein">
+                          <h4>Albert Einstein</h4>
+                          <p><q>Life is like riding a bicycle. To keep your balance you must keep moving.</q></p>
+                      </div>
+                      <div class="col-lg-4 col-sm-6 text-center mb-4">
+                          <img class="rounded-circle img-fluid d-block mx-auto" style="height: 260px; width: 260px"  src="<?php echo base_url() ?>assets/images/home/Martin-Luther-King-Jr.jpg" alt="Martin-Luther-King-Jr">
+                          <h4>Martin Luther King, Jr.</h4>
+                          <p><q>The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education.</q></p>
+                      </div>
                 </div>
               </div>
         </section><br>

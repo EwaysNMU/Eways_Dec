@@ -5,7 +5,7 @@
         border: none;
         border-radius: 0%;
         color: white;
-        padding: 15px 32px;
+        padding: 10px 22px;
         text-align: center;
         text-decoration: none;
         display: inline-block;

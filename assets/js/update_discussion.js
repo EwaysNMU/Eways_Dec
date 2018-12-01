@@ -21,7 +21,7 @@ $(document).ready(function () {
             return false;
         } 
         else {
-            jQuery.ajax({
+        jQuery.ajax({
                 type: "POST",
                 url: "http://sict-iis.nmmu.ac.za/eways/index.php/user/edit/post/update",
                 dataType: 'json',

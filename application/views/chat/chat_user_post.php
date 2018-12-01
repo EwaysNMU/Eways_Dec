@@ -112,9 +112,9 @@
             <div style="display:none" id="myDIV">
                 <form id="myForm" name="submit_publish">
                     <b><label>Title:</label></b>
-                    <input id="title" name="title" type="text" class="form-control" autocomplete="No" autofocus="Yes">
+                    <input id="title" name="title" type="text" class="form-control"placeholder="title" autofocus="Yes">
                     <b><label>Body:</label></b>
-                    <textarea id="description" name="description" style="margin-top: 1px; resize: none;color:black;" rows="4" cols="50" class="jqte-test jqte_editor editor jqte form-control" autofocus ></textarea>
+                    <textarea id="description" name="description" style="margin-top: 1px;color:black;" rows="10" cols="50" class="form-control" placeholder="body" autofocus ></textarea>
                     <input style="margin-bottom: 5px;margin-top: 5px" name="submit" value="Publish" type="submit" class="btn-submit pull-right submit btn-info"><br><hr>
                 </form>
             </div>

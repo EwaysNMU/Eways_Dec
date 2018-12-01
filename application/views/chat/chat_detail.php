@@ -1,3 +1,4 @@
+
 <style>
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
@@ -98,9 +99,15 @@
         <h4  align="center" style="padding-bottom:5px; padding-top: 40px"class="my-4">
             <p id="chat-title"><?php echo $this->input->get('title') ?></p>
         </h4>
+        
+            <div class="row">
+                <div id="div-media" class="col-lg-8 col-sm-8 portfolio-item">
+                    <p id="testing_br" style="white-space: pre-wrap; background-color:#d7d8d8;border-radius: 1%;padding-left: 20px;padding-top: 5px;padding-bottom: 5px;"><?php echo $this->input->get('body') ?></p>
+               </div>
+            </div>
         <div class="row">
             <div id="div-media" class="col-lg-8 col-sm-8 portfolio-item">
-                <div style="background-color:#d7d8d8;border-radius: 1%;padding-left: 20px;padding-top: 5px;padding-bottom: 5px"><?php echo $this->input->get('body') ?><br></div>
+<!--                <textarea id="demo-editor-bootstrap" disabled="Yes" style="background-color:#d7d8d8;border-radius: 1%;padding-left: 20px;padding-top: 5px;padding-bottom: 5px; resize: none;outline: none" cols="50"  class="form-control"><?php echo $this->input->get('body') ?></textarea>-->
                 <?php if($meg5 != "Closed"):?>
                 <small><a id="qstBT" href="#" onclick="myFunction()">Post a Comment</a></small><br>
                 <?php endif?>
@@ -110,7 +117,7 @@
                     <form name="submit_comment">
                         <input hidden type="number" name="chatID" id="chatID" value="<?php echo $meg1 ?>">
                         <b><label>Comment:</label></b>
-                        <textarea id="comment" name="comment" style="margin-top: 1px; resize: none;color:black;" rows="4" cols="50" class="jqte-test jqte_editor jqte form-control" autofocus></textarea>
+                        <textarea id="comment" name="comment" style="margin-top: 1px;" rows="6" cols="50" class="form-control" placeholder="enter your comment" autofocus></textarea>
                         <input style="margin-bottom: 5px;margin-top: 5px" name="submit" value="Post" type="submit" class="btn-submit pull-right submit btn-info"><br><br>
                     </form>
                 </div>
@@ -122,6 +129,8 @@
             </div>
         </div>
     </div>
+    <script>
+    </script>
     <script src="<?php echo base_url() ?>assets/js/text-editor.js"></script>
     <script src="<?php echo base_url() ?>assets/js/jquery-3.3.1.js"></script>
     <script src="<?php echo base_url() ?>assets/js/post_comment.js"></script>

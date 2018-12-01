@@ -1,4 +1,3 @@
-
 <style>
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
@@ -85,7 +84,7 @@
                 <form id="myForm" name="submit_update">
                     <b><label>Title:</label></b>
                     <input hidden="true" id="chatID" name="chatID" type="text" value="<?php echo $this->input->get('id')?>">
-                    <input id="title" name="title" type="text" class="form-control" autocomplete="No" autofocus="Yes" value="<?php echo $this->input->get('title')?>">
+                    <input id="title" name="title" type="text" class="form-control" autofocus="Yes" value="<?php echo $this->input->get('title')?>">
                     <b><label>Status:</label></b><br>
                     <?php if ($this->input->get('status') == "Open"): ?>
                         <label>
@@ -104,7 +103,7 @@
                     <?php endif ?>
                     <br>
                     <b><label>Body:</label></b>
-                    <textarea id="description" name="description" style="margin-top: 1px; resize: none;color:black;" rows="4" cols="50" class="jqte-test jqte_editor editor jqte form-control" autofocus ><?php echo $this->input->get('body')?></textarea>
+                    <textarea id="description" name="description" style="margin-top: 1px;color:black;" rows="10" cols="50" class="form-control" autofocus ><?php echo $this->input->get('body')?></textarea>
                     <input style="margin-bottom: 5px;margin-top: 5px" name="submit" value="Update" type="submit" class="btn-submit pull-right submit btn-info"><br><hr>
                 </form>
             </div>

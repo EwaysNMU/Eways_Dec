@@ -93,14 +93,54 @@ class Student_model extends CI_Model {
     }
 
     public function _insert_new_student($data) {
-
+        
         $this->db->insert('students', $data);
+        $stu_no = $this->db->insert_id();
+        //GOAL SETTING NOTE
+        $note1['studentID'] = $stu_no;
+        $note1['topicID'] = "1";
+        $this->db->insert('note', $note1);
+        //TIME MANAGEMENT NOTE
+        $note2['studentID'] = $stu_no;
+        $note2['topicID'] = "2";
+        $this->db->insert('note', $note2);
+        //STUDY STRATEGIES NOTE
+        $note3['studentID'] = $stu_no;
+        $note3['topicID'] = "3";
+        $this->db->insert('note', $note3);
+        //CONCENTRATION NOTE
+        $note4['studentID'] = $stu_no;
+        $note4['topicID'] = "4";
+        $this->db->insert('note', $note4);
+        //ACADEMIC WRITING NOTE
+        $note5['studentID'] = $stu_no;
+        $note5['topicID'] = "5";
+        $this->db->insert('note', $note5);
+        //REFERENCING NOTE
+        $note6['studentID'] = $stu_no;
+        $note6['topicID'] = "6";
+        $this->db->insert('note', $note6);
+        //NOTE TAKING NOTE
+        $note7['studentID'] = $stu_no;
+        $note7['topicID'] = "7";
+        $this->db->insert('note', $note7);
+        //PRESENTATION NOTE
+        $note8['studentID'] = $stu_no;
+        $note8['topicID'] = "8";
+        $this->db->insert('note', $note8);
+        //TIPS FOR EXAMS AND TEST NOTE
+        $note9['studentID'] = $stu_no;
+        $note9['topicID'] = "9";
+        $this->db->insert('note', $note9);
+        return $note9;
 
-        if ($this->db->affected_rows() > 0) {
-            return TRUE;
-        } else {
-            return FALSE;
-        }
+//        $this->db->insert('students', $data);
+//
+//        if ($this->db->affected_rows() > 0) {
+//            return TRUE;
+//        } else {
+//            return FALSE;
+//        }
     }
 
     public function _get_courses_based_on_studentID($studentID) {
@@ -240,16 +280,6 @@ class Student_model extends CI_Model {
    $this->db->where('topicID', $topicID);
         return $query = $this->db->get('note');
     }
-     public function insert_new_note($data) {
-       $this->db->insert('note', $data);
-
-        if ($this->db->affected_rows() > 0) {
-            return TRUE;
-        } else {
-            return FALSE;
-        }
- 
-   }
     public function get_resources() {
         return $query = $this->db->get('resources');
     }
@@ -281,6 +311,10 @@ class Student_model extends CI_Model {
         return $data;
     }
 }
+
+
+
+
 
 
 

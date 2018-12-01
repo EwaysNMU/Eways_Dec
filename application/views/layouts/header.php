@@ -22,6 +22,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/jquery-te-1.4.0.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery.min.js" charset="utf-8"></script>
 <script type="text/javascript"  src="<?php echo base_url() ?>/assets/js/jquery-te-1.4.0.min.js"></script>
+
+
         <style>
 
             .mandelacolor {
@@ -61,14 +63,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             }
         </style>
         <title>E-WAYS</title>
-<!--        <script>
-setInterval(  
-function()  
-{  
-$('#links').load('<?php echo site_url() ?>/chat/time_management/table'); 
-}, 3000);
-</script>-->
-
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
             <a class="navbar-brand" href="#">E-WAYS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

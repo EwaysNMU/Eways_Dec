@@ -33,14 +33,9 @@
                             <div id="value" style="color: #4CAF50"></div>
                             <form name="submit">
                                 <input hidden name="topicID" id="topicID" type="number" value="2">
-                                <?php if (empty($notes->result())): ?>
-                                    <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus></textarea>
-                                <?php else: ?>
-                                    <?php foreach ($notes->result() as $note) { ?> 
-                                        <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px; resize: none;color:black;" rows="4" cols="50" class="jqte-test form-control" placeholder="enter your chat" autofocus><?php echo $note->description ?></textarea>
-
-                                    <?php } ?>
-                                <?php endif ?>
+                                <?php foreach ($notes->result() as $note) { ?> 
+                                <textarea id="description" name="description" name="textarea" style="margin-bottom: 10px;color:black;" rows="5" cols="50" class="form-control" placeholder="enter your note" autofocus><?php echo $note->description ?></textarea>   
+                                <?php } ?>
                                 <input style="margin-top: 5px" name="submit" value="save" type="submit" class="btn-submit pull-right submit btn-info">
                             </form>
                         </div>
