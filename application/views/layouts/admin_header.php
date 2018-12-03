@@ -21,16 +21,56 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="icon" href="<?php echo base_url() ?>assets/images/favicon/favicon.ico" type="image/x-icon">
+        <style>
+            #mainNav{
+                background-color: #103A5C
+            }
+            #page-top{
+                background-color: #103A5C
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #15212A;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
 
+            .dropdown-content a {
+                color: whitesmoke;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #FEC000;
+                color: black;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            #navhover:hover{
+                text-decoration: none;
+                color: #FEC000
+
+            }
+            #navhover{
+                color: white
+            }
+        </style>
 
     </head>
 
-    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <body class="fixed-nav sticky-footer" id="page-top">
+<!--        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="#">E-WAYS</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+    </button>                       
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
@@ -51,22 +91,42 @@
                     <span class="nav-link-text">Tables</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
+<!--            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
                 <a class="nav-link" href="<?php echo site_url() ?>/admin/events">
                     <i class="fa fa-calendar"></i>
                     <span class="nav-link-text">Events</span>
                 </a>
-            </li>
+            </li>-->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
                 <a class="nav-link" href="<?php echo site_url() ?>/admin/resources">
                     <i class="fa fa-briefcase" aria-hidden="true"></i>
                     <span class="nav-link-text">Resources</span>
                 </a>
             </li>
+            <?php if($this->session->userdata('type')=="Main"):?>
+             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Staff">
+                <a class="nav-link" href="<?php echo site_url() ?>/admin/add_user">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span class="nav-link-text">Add User</span>
+                </a>
+             </li>
+             <?php endif?>
+              <?php foreach ($admin_details->result() as $value) { ?>
+            <li class="nav-item dropdown">&nbsp;&nbsp;
+                <img src="<?php echo base_url(); ?>uploads/user_profiles/<?php echo $value->photo ?>" alt="user picture" style="width:23px; height:23px;border-radius: 100%;" />
+                <a id="navhover"><?php echo $value->first_name." ".$value->last_name ?>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="<?php echo site_url(); ?>/admin/profile"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                    <a data-toggle="modal"  href="#exampleModal"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                </div>
+            </li>
+                    <?php } ?> 
         </ul>
 
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+<!--            <li class="nav-item">
                 <form class="form-inline my-2 my-lg-0 mr-lg-2">
                     <div class="input-group">
                         <input class="form-control" type="text" placeholder="Search for...">
@@ -77,7 +137,7 @@
                         </span>
                     </div>
                 </form>
-            </li>
+            </li>-->
             <li class="nav-item">
                 <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
                     <i class="fa fa-fw fa-sign-out"></i>Logout</a>
@@ -85,6 +145,82 @@
         </ul>
     </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

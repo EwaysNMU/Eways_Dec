@@ -7,6 +7,16 @@ class Admin_charts extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Admin_model', '', TRUE);
+               if ( ! $this->session->userdata('admin_ID','username','firstname','lastname','type'))
+    {
+        $allowed = array(
+             // All allowed function names for not logged in users ( i keep it empty usually)
+        );
+        if ( ! in_array($this->router->fetch_method(), $allowed))
+        {
+            redirect('/admin/login');
+        }
+    }
     }
 
     public function index() {
@@ -15,7 +25,8 @@ class Admin_charts extends CI_Controller {
 
     public function admin_charts() {
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/admin_charts');
         $this->load->view('layouts/admin_footer');
     }
@@ -136,7 +147,8 @@ class Admin_charts extends CI_Controller {
         $data ['text1'] = "This graph illustrates the total number of times each topic has been completed by all students.";
         $data ['text2'] = "As shown on the graph, the number of times each topic has been completed is as follows:<br>";
 
-        $this->load->view('layouts/admin_header');
+       $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/admin_charts_completed_topics', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -159,7 +171,8 @@ class Admin_charts extends CI_Controller {
         $data ['text1'] = "This graph illustrates the total number of times each topic has been<br> completed by all students.";
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, the number of times each topic has been completed is as follows:<br>";
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/admin_charts_completed_topics', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -197,7 +210,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> completed:<br>";
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/admin_charts_topics_per_student', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -221,7 +235,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following responses as to whether the course was helpful or not:<br>";
         
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q1', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -247,7 +262,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following ratings for the amount of material covered:<br>";
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q2', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -271,7 +287,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following responses regarding the consistency of the course content:<br>";
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q3', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -297,7 +314,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following ratings regarding his/her confidence level for completing the knowledge or skill presented:<br>";
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q4', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -321,7 +339,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following responses:<br>";
 
-        $this->load->view('layouts/admin_header');
+       $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q5', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -345,7 +364,8 @@ class Admin_charts extends CI_Controller {
         $data ['text2'] = "As shown on the graph, between <strong>$startDate</strong> and <strong>$endDate</strong>, ";
         $data ['text3'] = " <strong>(s$studentName)</strong> gave the following responses:<br>";
         
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/charts/feedback/admin_charts_q6', $data);
         $this->load->view('layouts/admin_footer');
     }

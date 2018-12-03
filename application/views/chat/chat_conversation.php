@@ -5,6 +5,7 @@ function()
 $('#convo').load('<?php echo site_url("/chat/conversation/".$meg1) ?>');
 }, 3000);
 </script>
+<?php if($get_chat->result()!= NULL):?>
 <?php foreach ($get_chat->result() as $chat) { ?>
     <?php foreach ($student->result() as $value) { ?>
 
@@ -21,5 +22,10 @@ $('#convo').load('<?php echo site_url("/chat/conversation/".$meg1) ?>');
 
         <?php endif ?>
     <?php } ?>
-<?php } 
+<?php } ?>
+<?php else:?>
+            <br><br><br>
+                <p align="center">There is no comment to display</p>   
+<?php endif; 
+
 

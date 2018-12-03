@@ -9,10 +9,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>EWAYS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="<?php echo base_url() ?>assets/images/favicon/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
+     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+<link href="<?php echo base_url() ?>assets/lightbox/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <!-- Google Fonts  -->
@@ -52,7 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </style>
 </head>
 <body>
-
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
     <a class="navbar-brand" href="#">E-WAYS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,38 +72,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </nav><br><br><br><br>
 
 <div class="container">
-    
-    <?php $attributes = array('class' => 'col s12', 'id' => 'myform');
-    echo form_open_multipart('add_feed', $attributes); ?>
-
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" class="form-control" required name="title" id="title" aria-describedby="titleHelp" placeholder="Enter Title">
+    <div class="row">
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Created</th>
+                        <th>Short Description</th>
+                        <th>Description</th>
+                        <th>Link</th>
+                        <th>Image</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 <?php foreach ($feeds_list as $row){?>
+                    <tr>
+                        <td><?php echo $row['title']; ?></td>
+                        <td class="dates"><?php echo date('l, M j, Y', strtotime($row['created'])); ?></td>
+                        <td><?php echo $row['shortDescription']; ?></td>
+                        <td><?php echo $row['description']; ?></td>
+                        <td><?php echo $row['link']; ?></td>
+                        <td>
+                            <a class="example-image-link" href="<?php echo base_url() ?>uploads/feeds/<?php echo $row['picture_path']; ?>" data-lightbox="<?php echo $row['picture_path']; ?>" data-title="<?php echo $row['picture_path']; ?>"><img class="example-image" src="<?php echo base_url() ?>uploads/feeds/<?php echo $row['picture_path']; ?>" alt="" height="40" width="40"/></a>
+                        </td>
+                        <td class="dates"><?php echo date('l, M j, Y', strtotime($row['updated'])); ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Title</th>
+                    <th>Created</th>
+                    <th>Short Description</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                      <th>Image</th>
+                    <th>Last Updated</th>
+                </tr>
+            </tfoot>
+        </table>
     </div>
-     <div class="form-group">
-        <label for="sDescription">Short Description</label>
-        <input type="text" class="form-control" required name="shortDescription" id="sDescription" aria-describedby="sDescriptionHelp" placeholder="Enter Short Description">
-    </div>
-     <div class="form-group">
-        <label for="Description">Description</label>
-        <textarea type="text-area" class="form-control" required  name="description" id="Description" aria-describedby="DescriptionHelp" placeholder="Enter Full Description"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="link">Link</label>
-        <input type="email" class="form-control" required name="link" id="link" placeholder="i.e. www.google.com">
-    </div>
-    <div class="form-group">
-      <input  name="userfile" type="file" size="80">
-            <?php if(isset($say_something)){
-   echo $error;
-    } ?>
-
-    </div>
-     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>   
-    
-    
     
 </div>
 
@@ -113,8 +120,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="<?php echo base_url() ?>assets/lightbox/js/lightbox.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+        'alwaysShowNavOnTouchDevices':false,
+        'disableScrolling':false
+        
+    })
+</script>
 </body>
 </html>

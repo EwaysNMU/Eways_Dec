@@ -14,6 +14,17 @@
                 <?php echo $this->session->flashdata('flash_Success') ?>
             <?php endif ?>
         </p>
+        <script>
+            $(document).ready(function () {
+                $('div#deleted').delay(5000).fadeOut(400);
+                jQuery("div#deleted").show();
+                jQuery("div#deleted").html(localStorage.getItem("r_deleted"));
+                localStorage.clear("r_deleted");
+            });
+        </script>
+
+        <div id="deleted" style="color:#EDAD2A" align="center">
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="container-fluid">
@@ -41,7 +52,7 @@
                                                         <td>  
                                                             <a id="aedBtn" href="<?php echo site_url() ?>/admin/edit_resources_/<?php echo $value->resourceID . "/" . $value->title . "/" . $value->type . "/" . "?url=" . urlencode($value->file_web_url) ?>">
                                                                 Edit/ </a> 
-                                                            <a id="aedBtn" href="<?php echo site_url() ?>/admin/delete_resources/<?php echo $value->resourceID ?>">Delete/ </a>
+                                                            <a href="#" id="<?php echo $value->resourceID ?>" onclick="deleteResource(this);">Delete/ </a>
                                                             <a id="aedBtn" href="<?php echo site_url() ?>/admin/resources/view/<?php echo $value->title . "/" . $value->type . "/" . "?url=" . urlencode($value->file_web_url) ?>">View</a> 
                                                         </td>
                                                     </tr>
@@ -83,3 +94,23 @@
         }).draw();
     });
 </script>
+<script src="<?php echo base_url() ?>assets/js/resources_delete.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,16 @@ class Admin_controller extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Admin_model', '', TRUE);
+               if ( ! $this->session->userdata('admin_ID','username','firstname','lastname','type'))
+    {
+        $allowed = array(
+             // All allowed function names for not logged in users ( i keep it empty usually)
+        );
+        if ( ! in_array($this->router->fetch_method(), $allowed))
+        {
+            redirect('/admin/login');
+        }
+    }
     }
 
     public function index() {
@@ -21,7 +31,8 @@ class Admin_controller extends CI_Controller {
         $data ['completeCourse'] = $this->Admin_model->getNoCompleteCourse();
         $data ['activeUsers'] = $this->Student_model->count_active_users();
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/admin_home', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -30,11 +41,13 @@ class Admin_controller extends CI_Controller {
 
         $data ['notes'] = $this->Admin_model->getRegisteredUser();
         if ($data ['notes'] == FALSE) {
-            $this->load->view('layouts/admin_header');
+            $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
             $this->load->view('admin/admin_home');
             $this->load->view('layouts/admin_footer');
         } else {
-            $this->load->view('layouts/admin_header');
+            $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
             $this->load->view('admin/admin_tables', $data);
             $this->load->view('layouts/admin_footer');
         }
@@ -44,18 +57,21 @@ class Admin_controller extends CI_Controller {
 
         $data ['notes'] = $this->Admin_model->getRegisteredUser();
         if ($data ['notes'] == FALSE) {
-            $this->load->view('layouts/admin_header');
+            $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
             $this->load->view('admin/admin_home');
             $this->load->view('layouts/admin_footer');
         } else {
-            $this->load->view('layouts/admin_header');
+            $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
             $this->load->view('admin/admin_reg_user', $data);
             $this->load->view('layouts/admin_footer');
         }
     }
 
     public function admin_events() {
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/admin_events');
         $this->load->view('layouts/admin_footer');
     }
@@ -65,8 +81,15 @@ class Admin_controller extends CI_Controller {
     }
 
     public function admin_resources() {
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/admin_resources');
+        $this->load->view('layouts/admin_footer');
+    }
+    public function admin_profile() {
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
+        $this->load->view('admin/admin_user_profile',$data);
         $this->load->view('layouts/admin_footer');
     }
 
@@ -116,3 +139,8 @@ class Admin_controller extends CI_Controller {
     }
 
 }
+
+
+
+
+

@@ -165,6 +165,10 @@ $route['admin_tables_q6'] = 'admin/Admin_tables/admin_tables_q6_validation';
 
 $route['admin/events'] = 'admin_controller/admin_events';
 
+$route['admin/add_user'] = 'admin/Admin_add_user/add_user_view';
+$route['admin/add_user_'] = 'admin/Admin_add_user/add_user';
+$route['admin/profile'] = 'Admin_controller/admin_profile';
+
 $route['admin/resources'] = 'admin/Admin_resources/Admin_resources';
 $route['admin/add_resources_'] = 'admin/Admin_resources/add_resources_view';
 $route['admin/add_resources'] = 'admin/Admin_resources/Add_resources';
@@ -200,4 +204,5 @@ $route['event_form'] = 'event_controller/event_registration_form';
 
 //Feed
 $route['nw_feed']='feeds_controller/feeds_form';
-$route['add_feed']='add_feeds_controller/feeds_form';
+$route['add_feed']='feeds_controller/do_upload';
+$route['allfeeds']='feeds_controller/feeds_table';

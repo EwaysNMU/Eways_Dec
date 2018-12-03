@@ -13,7 +13,7 @@ class Feedbacks_controller extends CI_Controller {
         );
         if ( ! in_array($this->router->fetch_method(), $allowed))
         {
-            redirect('/login_login');
+            redirect('/student/login');
         }
     }
     }

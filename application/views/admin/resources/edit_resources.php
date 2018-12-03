@@ -45,7 +45,7 @@
                                             <?php if($meg3 != "Web Address"):?>
                         <div id="file" class="form-group type">
                             <label for="file">File:</label>
-                            <input accept=".jpeg, .jpg, .jpe, .jfif, .jif,.png,.pdf,image/*" type="file" class="form-control" name="file">
+                            <input  accept=".jpeg, .jpg, .jpe, .jfif, .jif,.png,.pdf,image/*" type="file" class="form-control" name="file">
                             <?php echo form_error('file'); ?>
                         </div>
                                             <?php else:?>
@@ -74,6 +74,7 @@
         </div>
     </div>
 </div>
+
 
 
 

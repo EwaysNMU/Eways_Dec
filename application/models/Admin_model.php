@@ -1090,5 +1090,28 @@ class Admin_model extends CI_Model {
 
         return $data;
     }
+    public function add_user($data) {
+        $this->db->insert('admin', $data);
+
+        if ($this->db->affected_rows() > 0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+    
+    public function get_user_admin() {
+        $staffID = $this->session->userdata('admin_ID');
+        $this->db->select('*');
+        $this->db->from('admin');
+        $this->db->where("admin_ID",$staffID);
+
+        $data = $this->db->get();
+
+        return $data;
+    }
+
 }
+
+
 

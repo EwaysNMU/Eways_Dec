@@ -10,10 +10,11 @@ class Resources extends CI_Model {
     }
 
     public function getResources() {
+        $staffID = $this->session->userdata('admin_ID');
         $status = "No";
         $this->db->select('*');
         $this->db->from('resources');
-        $this->db->where('StaffID = 1');
+        $this->db->where('StaffID',$staffID);
         $this->db->where('deleted', $status);
         $data = $this->db->get();
         return $data;
@@ -44,6 +45,9 @@ class Resources extends CI_Model {
     }
 
 }
+
+
+
 
 
 

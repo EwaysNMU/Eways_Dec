@@ -7,6 +7,16 @@ class Admin_tables extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Admin_model', '', TRUE);
+               if ( ! $this->session->userdata('admin_ID','username','firstname','lastname','type'))
+    {
+        $allowed = array(
+             // All allowed function names for not logged in users ( i keep it empty usually)
+        );
+        if ( ! in_array($this->router->fetch_method(), $allowed))
+        {
+            redirect('/admin/login');
+        }
+    }
     }
 
     public function index() {
@@ -15,7 +25,8 @@ class Admin_tables extends CI_Controller {
 
     public function admin_tables() {
 
-        $this->load->view('layouts/admin_header');
+       $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/admin_tables');
         $this->load->view('layouts/admin_footer');
     }
@@ -133,7 +144,8 @@ class Admin_tables extends CI_Controller {
         $data ['ctopic8'] = $this->Admin_model->getCountTopic8();
         $data ['ctopic9'] = $this->Admin_model->getCountTopic9();
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/admin_tables_completed_topics', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -153,7 +165,8 @@ class Admin_tables extends CI_Controller {
         $data ['ctopic8'] = $this->Admin_model->getCountTopic8_date($startDate, $endDate);
         $data ['ctopic9'] = $this->Admin_model->getCountTopic9_date($startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+       $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/admin_tables_completed_topics', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -177,7 +190,8 @@ class Admin_tables extends CI_Controller {
         $data ['presentation'] = $this->Admin_model->getUserCountPresentation($graph, $studentName, $startDate, $endDate);
         $data ['tipsforexams'] = $this->Admin_model->getUserCountTipsForExams($graph, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/admin_tables_topics_per_student', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -197,7 +211,8 @@ class Admin_tables extends CI_Controller {
         $data ['no'] = $this->Admin_model->getUserCountQ1_No($graph, $topic, $studentName, $startDate, $endDate);
         $data ['somehow'] = $this->Admin_model->getUserCountQ1_Somehow($graph, $topic, $studentName, $startDate, $endDate);
         
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q1', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -219,7 +234,8 @@ class Admin_tables extends CI_Controller {
         $data ['rating4'] = $this->Admin_model->getUserCountQ2_4($graph, $topic, $studentName, $startDate, $endDate);
         $data ['rating5'] = $this->Admin_model->getUserCountQ2_5($graph, $topic, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q2', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -239,7 +255,8 @@ class Admin_tables extends CI_Controller {
         $data ['consistent'] = $this->Admin_model->getUserCountQ3_Consistent($graph, $topic, $studentName, $startDate, $endDate);
         $data ['inconsistent'] = $this->Admin_model->getUserCountQ3_Inconsistent($graph, $topic, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q3', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -261,7 +278,8 @@ class Admin_tables extends CI_Controller {
         $data ['rating4'] = $this->Admin_model->getUserCountQ4_4($graph, $topic, $studentName, $startDate, $endDate);
         $data ['rating5'] = $this->Admin_model->getUserCountQ4_5($graph, $topic, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q4', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -281,7 +299,8 @@ class Admin_tables extends CI_Controller {
         $data ['no'] = $this->Admin_model->getUserCountQ5_No($graph, $topic, $studentName, $startDate, $endDate);
         $data ['somehow'] = $this->Admin_model->getUserCountQ5_Somehow($graph, $topic, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q5', $data);
         $this->load->view('layouts/admin_footer');
     }
@@ -301,7 +320,8 @@ class Admin_tables extends CI_Controller {
         $data ['no'] = $this->Admin_model->getUserCountQ6_No($graph, $topic, $studentName, $startDate, $endDate);
         $data ['somehow'] = $this->Admin_model->getUserCountQ6_Somehow($graph, $topic, $studentName, $startDate, $endDate);
 
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/tables/feedback/admin_tables_q6', $data);
         $this->load->view('layouts/admin_footer');
     }

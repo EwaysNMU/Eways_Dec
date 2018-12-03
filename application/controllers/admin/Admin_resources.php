@@ -7,6 +7,16 @@ class Admin_resources extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('admin/Resources','resources');
+           if ( ! $this->session->userdata('admin_ID','username','firstname','lastname','type'))
+    {
+        $allowed = array(
+             // All allowed function names for not logged in users ( i keep it empty usually)
+        );
+        if ( ! in_array($this->router->fetch_method(), $allowed))
+        {
+            redirect('/admin/login');
+        }
+    }
     }
 
     public function index() {
@@ -17,12 +27,14 @@ class Admin_resources extends CI_Controller {
         
         
         $data['get_resources'] = $this->resources->getResources();
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/resources/all_resources',$data);
         $this->load->view('layouts/admin_footer');
     }
     public function add_resources_view() {
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/resources/add_resources');
         $this->load->view('layouts/admin_footer');
     }
@@ -32,7 +44,8 @@ class Admin_resources extends CI_Controller {
             'meg2' => $meg2,
              'meg3' => $meg3,
         );
-        $this->load->view('layouts/admin_header');
+        $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/resources/edit_resources',$edit);
         $this->load->view('layouts/admin_footer');
     }
@@ -41,16 +54,18 @@ class Admin_resources extends CI_Controller {
             'meg1' => $meg1,
             'meg2' => $meg2,
         );
-        $this->load->view('layouts/admin_header');
+       $data["admin_details"] = $this->Admin_model->get_user_admin();
+        $this->load->view('layouts/admin_header',$data);
         $this->load->view('admin/resources/detailed_resources',$detail);
         $this->load->view('layouts/admin_footer');
     }
     public function delete() {
          $resourceID = $this->uri->segment(3);
             $this->resources->delete($resourceID);
-            $resources="Resources deleted";
-        $this->session->set_flashdata('flash_Success', $resources);
-        redirect("/admin/resources");
+            echo json_encode(['comment_return' => 'Deleted!']);
+//            $resources="Resources deleted";
+//        $this->session->set_flashdata('flash_Success', $resources);
+//        redirect("/admin/resources");
     }
 
     public function add_resources() {
@@ -78,19 +93,31 @@ class Admin_resources extends CI_Controller {
                 }
             }
             
-            if($this->input->post('type') == "Web Url"){
-            $data = array(
+            if ($this->input->post('type') == "Web Address") {
+                    if ($this->input->post('web_url') =="") {
+                        $this->session->set_flashdata('flash_error', 'A Web Address is required');
+                         redirect('/admin/add_resources_');
+                    }
+                else{
+                $data = array(
                 'title' => $this->input->post('title'),
                 'type' => $this->input->post('type'),
                 'file_web_url' => $this->input->post('web_url'),
-            );
+                'StaffID' => $this->session->userdata('admin_ID'),
+                );}
             }
             else{
+                if ($upload =="") {
+                        $this->session->set_flashdata('flash_error', 'A '.$this->input->post('type').' upload is required');
+                         redirect('/admin/add_resources_');
+                    }
+                    else{
                 $data = array(
                 'title' => $this->input->post('title'),
                 'type' => $this->input->post('type'),
                 'file_web_url' => $upload,
-            );
+                'StaffID' => $this->session->userdata('admin_ID'),
+                    );}
             }
             if ($this->resources->insert_resources($data)) {
                   $resources="Resources added";
@@ -153,6 +180,31 @@ class Admin_resources extends CI_Controller {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
