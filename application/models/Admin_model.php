@@ -1110,8 +1110,21 @@ class Admin_model extends CI_Model {
 
         return $data;
     }
-
+public function update_admin($admin_id, $fname, $lname,$upload) {
+       $data = array('first_name' => $fname, 'last_name' => $lname, 'photo' => $upload);
+        $this->db->where('admin_ID', $admin_id);
+        return $this->db->update('admin', $data); 
+            
+    }
+    public function remove_photo($admin_id, $photo) {
+       $data = array('photo' => $photo);
+        $this->db->where('admin_ID', $admin_id);
+        return $this->db->update('admin', $data); 
+            
+    }
 }
+
+
 
 
 

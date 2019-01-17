@@ -63,6 +63,57 @@ class Admin_add_user extends CI_Controller {
              redirect("/admin_home");
          }
     }
+    public function delete_photo() {
+        $admin_id = $this->session->userdata('admin_ID');
+        $data["info"] = $this->Admin_model->get_user_admin();
+        foreach ($data['info']->result() as $row) {
+            $db_photo = $row->photo; //or whatever the query returns
+        }
+        $photo = "no_profile.jpeg";
+        $this->Admin_model->remove_photo($admin_id, $photo);
+        unlink(FCPATH . "uploads/user_profiles/" . $db_photo);
+        redirect('admin/profile');
+    }
+    public function update_profile() {
+        if (isset($_POST['upload'])) {
+            $admin_ID = $this->session->userdata('admin_id');
+            $imgFile = $_FILES['userfile']['name'];
+            $tmp_dir = $_FILES['userfile']['tmp_name'];
+            $imgSize = $_FILES['userfile']['size'];
+            $userpic = '';
+            if ($imgFile) {
+                $upload_dir = 'uploads/user_profiles/'; // upload directory		
+                $imgExt = strtolower(pathinfo($imgFile, PATHINFO_EXTENSION)); // get image extension
+                $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
+                $userpic = $admin_ID . rand(1000, 1000000) . "." . $imgExt;
 
+                if (in_array($imgExt, $valid_extensions)) {
+                    if ($imgSize < 5000000) {
+                        $upload_result = move_uploaded_file($tmp_dir, $upload_dir . $userpic);
+                    } else {
+                        $this->session->set_flashdata('flash_error_large', 'error');
+                        redirect('admin/profile');
+                    }
+                } else {
+                    $this->session->set_flashdata('flash_error', 'error');
+                    redirect('admin/profile');
+                }
+            } else {
+                
+            }
+            if ($userpic == NULL) {
+                $userpic = $this->input->post('db_photo');
+            }
+            $admin_id = $this->session->userdata('admin_ID');
+            $fname = $this->input->post('f_name');
+            $lname = $this->input->post('l_name');
+            if ($this->Admin_model->update_admin($admin_id, $fname, $lname, $userpic)) {
+                $this->session->set_flashdata('flash_profile', 'Profile Updated');
+                redirect('admin/profile');
+            } else {
+                redirect('admin/profile');
+            }
+        }
+    }
 
 }

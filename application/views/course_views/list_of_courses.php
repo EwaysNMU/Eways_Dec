@@ -1,11 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_list_home.css">
 <body style="background-color: #F5F5F5">
 <br><br><br><br>
-<style>
-    
-</style>
-
-
 <?php if ($this->session->flashdata('flash_Success')): ?>
     <script>
         swal({
@@ -32,7 +27,7 @@
                 <div class="overlay"><br><br><br><br><br><br>
                     <h6 style="text-align: center">Learn how to set achievable goals</h6>
                     <div class="text">
-                        <a class="button" href="<?php echo site_url() ?>/goals_setting_">Start</a>
+                        <a id="goal_btn" class="button" href="<?php echo site_url() ?>/goals_setting_">Start</a>
                     </div>
                 </div>
             </div>

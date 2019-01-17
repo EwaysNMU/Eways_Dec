@@ -192,7 +192,7 @@
                     <?php } ?>
                 </div>
 
-                Note taking & Summarising: <?php foreach ($notetaking->result() as $value) { ?>
+                Note taking & Summarizing: <?php foreach ($notetaking->result() as $value) { ?>
                     <strong><?php echo $value->countNotetaking ?></strong>,
                 <?php } ?><br>
                 <small><a id="qstBT" href="#" onclick="myFunction7()">View Comments</a></small><br>
@@ -227,3 +227,5 @@
 </div>
 <!-- /.container-fluid-->
 <!-- /.content-wrapper-->
+
+

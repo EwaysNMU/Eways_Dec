@@ -19,38 +19,60 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 margin-right: auto;
                 margin-top:100px;
             }
-            body{
-                background-image:url('<?php echo base_url() ?>assets/images/bg-Image.png');
-
-                /* Center and scale the image nicely */
-                background-repeat: no-repeat; 
-                background-position: center;
-                background-attachment: fixed;       
-                webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                height:100%;
-                width:100%;
+            .mandelacolor {
+                background-color: #103A5C;
             }
-                #login_signup_forgot_btn {
-        background-color: #103A5C; /* Mandela Blue */
-        border: none;
-        border-radius: 0%;
-        color: white;
-        padding: 10px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-    }
-     #login_signup_forgot_btn:hover {
-        text-decoration: none;
-        color: black;
-        background-color:#FDB819 /*Mandela yellow */;}
-        </style>
-    </head>
-    <body>
+            /*            body{
+                            background-image:url('<?php echo base_url() ?>assets/images/bg-Image.png');
+            
+                             Center and scale the image nicely 
+                            background-repeat: no-repeat; 
+                            background-position: center;
+                            background-attachment: fixed;       
+                            webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
+                            height:100%;
+                            width:100%;
+                        }*/
+            #login_signup_forgot_btn {
+                background-color: #103A5C; /* Mandela Blue */
+                border: none;
+                border-radius: 0%;
+                color: white;
+                padding: 10px 22px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 18px;
+            }
+            #login_signup_forgot_btn:hover {
+                text-decoration: none;
+                color: black;
+                background-color:#FDB819 /*Mandela yellow */;}
+            </style>
+        </head>
+        <body style="background-color: #F5F5F5">
+        <nav class="navbar navbar-expand-lg navbar-dark mandelacolor">
+            <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+                <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+            </a>
+            <a class="navbar-brand" href="#">E-WAYS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul  class="navbar-nav">
+
+                </ul>
+
+            </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -116,25 +138,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script>
             $("#login_signup_forgot_btn").click(function (event) {
-            var textarea = document.getElementById('username');
-                    var word = '@mandela.ac.za';
-                    var textValue = textarea.value; //-> don't use .innerHTML since there is no HTML in a textarea element
+                var textarea = document.getElementById('username');
+                var word = '@mandela.ac.za';
+                var textValue = textarea.value; //-> don't use .innerHTML since there is no HTML in a textarea element
 
-                    if (textValue.indexOf(word) !== - 1)
-                    {
+                if (textValue.indexOf(word) !== -1)
+                {
                     alert('Invalid username: type your username without "@mandela.ac.za"');
-                     event.preventDefault();
+                    event.preventDefault();
                 }
 
-                            //Fetch form to apply custom Bootstrap validation
-                            var form = $("#formLogin");
-                            if (form[0].checkValidity() === false) {
+                //Fetch form to apply custom Bootstrap validation
+                var form = $("#formLogin");
+                if (form[0].checkValidity() === false) {
                     event.preventDefault();
-                            event.stopPropagation();
-                    }
+                    event.stopPropagation();
+                }
 
-                    form.addClass('was-validated');
-                    });
+                form.addClass('was-validated');
+            });
         </script>
     </body>
 </html>

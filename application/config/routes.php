@@ -168,6 +168,8 @@ $route['admin/events'] = 'admin_controller/admin_events';
 $route['admin/add_user'] = 'admin/Admin_add_user/add_user_view';
 $route['admin/add_user_'] = 'admin/Admin_add_user/add_user';
 $route['admin/profile'] = 'Admin_controller/admin_profile';
+$route['admin/profile/update'] = 'Admin/Admin_add_user/update_profile';
+$route['admin/profile/remove'] = 'Admin/Admin_add_user/delete_photo';
 
 $route['admin/resources'] = 'admin/Admin_resources/Admin_resources';
 $route['admin/add_resources_'] = 'admin/Admin_resources/add_resources_view';

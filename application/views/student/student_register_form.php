@@ -34,9 +34,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <title>EWAYS</title>
     </head>
-    <body>
+    <body style="background-color: #F5F5F5">
         <nav class="navbar navbar-expand-lg navbar-dark mandelacolor">
-            <a class="navbar-brand" href="<?php echo site_url() ?>">E-WAYS</a>
+            <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+                <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+            </a>
+            <a class="navbar-brand" href="#">E-WAYS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -143,7 +146,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <button id="login_signup_forgot_btn" type="submit" class="btn btn-primary  float-right">Submit</button>
             </div>
             <?php echo form_close(); ?>
-            &emsp;&emsp;&emsp;&emsp;<a href="<?php echo site_url() ?>/home" class="btn float-right" role="button">Cancel</a>
+            &emsp;&emsp;&emsp;&emsp;<a href="<?php echo site_url() ?>/home" class="float-right" style="padding-right: 20px; padding-top: 7px;">Return Home</a>
         </div><br><br>
         <script type="text/javascript">
             var depArt = ["Architecture", "Governmental and Social Sciences", "Language, Media & Communication", "Music, Art & Design"];
@@ -207,6 +210,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 

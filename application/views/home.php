@@ -1,6 +1,9 @@
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
+        <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+            <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+        </a>
         <a class="navbar-brand" href="#">E-WAYS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,10 +24,13 @@
                 <li class="nav-item">
                     <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/student_register_form"> <i class="fa fa-user-plus"></i> Registration</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url() ?>/admin/login">Admin</a>
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/admin/login"> <i class="fa fa-user"></i> Staff</a>
                 </li>
+
+                <!--                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url() ?>/admin/login">Admin</a>
+                                </li>-->
 
 
             </ul>
@@ -65,9 +71,9 @@
                             <p><q>There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living.</q></p>
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center mb-4">
-                            <img class="rounded-circle img-fluid d-block mx-auto" style="height: 280px; width: 280px" src="<?php echo base_url() ?>assets/images/home/albert_Einstein.jpg" alt="Albert-Einstein">
-                            <h4>Albert Einstein</h4>
-                            <p><q>Life is like riding a bicycle. To keep your balance you must keep moving.</q></p>
+                            <img class="rounded-circle img-fluid d-block mx-auto" style="height: 280px; width: 280px" src="<?php echo base_url() ?>assets/images/home/Malala_Yousafzai.jpg" alt="Malala-Yousafzai">
+                            <h4>Malala Yousafzai</h4>
+                            <p><q>I raise up my voice – not so I can shout, but so that those without a voice can be heard. We cannot succeed when half of us are held back.</q></p>
                         </div>
                         <div class="col-lg-4 col-sm-6 text-center mb-4">
                             <img class="rounded-circle img-fluid d-block mx-auto" style="height: 260px; width: 260px"  src="<?php echo base_url() ?>assets/images/home/Martin-Luther-King-Jr.jpg" alt="Martin-Luther-King-Jr">
@@ -91,7 +97,7 @@
                                 <p class="font-weight-light mb-0">
                                     Room: R112<br/>
                                     Location: North Campus<br/>
-                                    Tel: +27 41 504 3207<br/>
+                                    Tel: +27 41 504 3241<br/>
                                     Email: Francisco.deVega@mandela.ac.za<br/>
                                 </p>
                             </div>
@@ -101,7 +107,7 @@
                             <div class="testimonial-item mx-auto mb-5 mb-lg-0" align="left">
                                 <b>Ronelle Plaatjes</b>
                                 <p class="font-weight-light mb-0">
-                                    Room: R107<br/>
+                                    Room: R113<br/>
                                     Location: North Campus<br/>
                                     Tel: +27 41 504 9055<br/>
                                     Email: Ronelle.plaatjes@mandela.ac.za<br/>
@@ -113,7 +119,7 @@
                             <div class="testimonial-item mx-auto mb-5 mb-lg-0" align="left">
                                 <b>Selwyn Milborrow</b>
                                 <p class="font-weight-light mb-0">
-                                    Room: R226<br/>
+                                    Room: R115<br/>
                                     Location: North Campus<br/>
                                     Tel: +27 41 504 9976<br/>
                                     Email: selwyn.milborrow@mandela.ac.za<br/>

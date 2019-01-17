@@ -17,41 +17,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                 margin-top:100px;
+                margin-top:100px;
             }
-            body{
-                background-image:url('<?php echo base_url() ?>assets/images/bg-Image.png');
-                
-                /* Center and scale the image nicely */
-                background-repeat: no-repeat; 
-                background-position: center;
-                background-attachment: fixed;       
-                webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                height:100%;
-                width:100%;
+            .mandelacolor {
+                background-color: #103A5C;
             }
-    #login_signup_forgot_btn {
-        background-color: #103A5C; /* Mandela Blue */
-        border: none;
-        border-radius: 0%;
-        color: white;
-        padding: 10px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-    }
-     #login_signup_forgot_btn:hover {
-        text-decoration: none;
-        color: black;
-        background-color:#FDB819 /*Mandela yellow */;}
-        </style>
-    </head>
-    <body>
-<div class="container">
+            /*            body{
+                            background-image:url('<?php echo base_url() ?>assets/images/bg-Image.png');
+                            
+                             Center and scale the image nicely 
+                            background-repeat: no-repeat; 
+                            background-position: center;
+                            background-attachment: fixed;       
+                            webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;
+                            height:100%;
+                            width:100%;
+                        }*/
+            #login_signup_forgot_btn {
+                background-color: #103A5C; /* Mandela Blue */
+                border: none;
+                border-radius: 0%;
+                color: white;
+                padding: 10px 22px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 18px;
+            }
+            #login_signup_forgot_btn:hover {
+                text-decoration: none;
+                color: black;
+                background-color:#FDB819 /*Mandela yellow */;}
+            </style>
+        </head>
+        <body style="background-color: #F5F5F5">
+        <nav class="navbar navbar-expand-lg navbar-dark mandelacolor">
+            <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+                <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+            </a>
+            <a class="navbar-brand" href="#">E-WAYS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul  class="navbar-nav">
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="container">
             <div class="row">
 
                 <div class="col-md-12">
@@ -121,7 +143,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <?php echo form_close(); ?>
                 </div>
             </div>
-</div><br><br>
+        </div><br><br>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

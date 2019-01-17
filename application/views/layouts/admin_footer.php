@@ -1,7 +1,7 @@
 <footer class="sticky-footer" id="admin_footer">
       <div class="container">
         <div class="text-center">
-          <small style="color: white">© 2018 All right Reserved. Peer-Collaboration</small>
+          <small style="color: white">© <?php echo date('Y')?> All right Reserved. Peer-Collaboration</small>
         </div>
       </div>
     </footer>
@@ -53,6 +53,7 @@
 </body>
 
 </html>
+
 
 
 

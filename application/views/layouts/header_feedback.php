@@ -29,6 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body style="background-color: #F5F5F5">
        <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
+            <a class="navbar-brand" href="#">
+                <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+            </a>
             <a class="navbar-brand" href="#">E-WAYS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
