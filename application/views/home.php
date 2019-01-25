@@ -133,6 +133,45 @@
 
         </div>
     </div>
+    <!--    ///popup-->
+     <!-- The Modal -->
+<!--  <div class="modal show fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+         Modal Header 
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+         Modal body 
+        <div class="modal-body">
+         <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/Brené Brown.jpg">
+        </div>
+        
+         Modal footer 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>-->
+    
+<div id="popup">
+<!-- This button will close the popup on website-->
+        <button class="btn" style="color: #FEC000;float: right;background-color: #103A5C" id="close" data-dismiss="modal"><i class="fa fa-times" style="color:red"></i> Close</button><br><br>
+
+<p align="center" style="color:#FEC000; font-size: 18px; background-color:#103A5C">Welcome to E-WAYS</p>
+    <!-- and here comes the image -->
+    <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/Brené Brown.jpg" alt="popup">
+
+    
+        <!--  we close the div popup code-->
+        <!-- all things in this will show up within the popup so you can add more things not just an image -->
+</div>
+</div>
 </body>
 
 <!-- Footer -->
@@ -151,7 +190,7 @@
     </section>
 </footer>
 <!-- ./Footer -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="<?php echo base_url() ?>assets/js/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 

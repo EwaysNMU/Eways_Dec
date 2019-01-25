@@ -20,7 +20,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <!-- Google Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/modal_popup.js"></script>
         <title>E-WAYS</title>
           <style>
     .mandelacolor {
@@ -52,6 +53,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-style: italic;
+}
+/*.fade {
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}*/
+.responsive {
+  width: 100%;
+  max-height: 400%;
+}
+ #popup {
+            display:none;
+            position:fixed;
+            margin:0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+    }
+    body{
+    width: 100%;
+    height: 100%;
 }
 </style>
     </head>
