@@ -8,10 +8,10 @@ $( document ).ready(function() {
   if (document.cookie.indexOf('visited=true') === -1){
     // load the overlay
     
-    $("#popup").fadeIn(3000);
+    $("#popup").fadeIn(1000);
     $('#popup').modal({show:true});
-    var year = 1000*60*60*24*365;
-    var expires = new Date((new Date()).valueOf() + year);
+    var minutes = 1000*30;
+    var expires = new Date((new Date()).valueOf() + minutes);
     document.cookie = "visited=true;expires=" + expires.toUTCString();
 
   }

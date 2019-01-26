@@ -134,43 +134,20 @@
         </div>
     </div>
     <!--    ///popup-->
-     <!-- The Modal -->
-<!--  <div class="modal show fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-         Modal Header 
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-         Modal body 
-        <div class="modal-body">
-         <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/Brené Brown.jpg">
-        </div>
-        
-         Modal footer 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>-->
-    
-<div id="popup">
-<!-- This button will close the popup on website-->
+    <div id="popup">
+        <!-- This button will close the popup on website-->
         <button class="btn" style="color: #FEC000;float: right;background-color: #103A5C" id="close" data-dismiss="modal"><i class="fa fa-times" style="color:red"></i> Close</button><br><br>
 
-<p align="center" style="color:#FEC000; font-size: 18px; background-color:#103A5C">Welcome to E-WAYS</p>
-    <!-- and here comes the image -->
-    <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/Brené Brown.jpg" alt="popup">
-
-    
-        <!--  we close the div popup code-->
-        <!-- all things in this will show up within the popup so you can add more things not just an image -->
-</div>
+        <p align="center" style="color:#FEC000; font-size: 18px; background-color:#103A5C">Welcome to E-WAYS</p>
+        <!-- and here comes the image -->
+        <?php
+        $ThatTime1 ="15:00:10";
+        $ThatTime2 ="16:00:00";
+        $ThatTime3 ="18:00:10";
+        $time = time();
+        ?>
+        <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/GRIT.jpg" alt="popup">
+ </div>
 </div>
 </body>
 
