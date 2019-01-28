@@ -163,7 +163,7 @@ $route['admin_tables_q4'] = 'admin/Admin_tables/admin_tables_q4_validation';
 $route['admin_tables_q5'] = 'admin/Admin_tables/admin_tables_q5_validation';
 $route['admin_tables_q6'] = 'admin/Admin_tables/admin_tables_q6_validation';
 
-$route['admin/events'] = 'admin_controller/admin_events';
+//$route['admin/events'] = 'admin_controller/admin_events';
 
 $route['admin/add_user'] = 'admin/Admin_add_user/add_user_view';
 $route['admin/add_user_'] = 'admin/Admin_add_user/add_user';
@@ -202,9 +202,26 @@ $route['translate_uri_dashes'] = FALSE;
 
 //Events
 $route['event'] = 'event_controller';
+$route['events'] = 'event_controller/list_events';
 $route['event_form'] = 'event_controller/event_registration_form';
+
+$route['admin/events'] = 'admin/Admin_events/admin_events';
+$route['admin/add_events_'] = 'admin/Admin_resources/add_resources_view';
+$route['admin/add_events'] = 'admin/Admin_resources/Add_resources';
+$route['admin/edit_events_/(.*)'] = 'admin/Admin_resources/edit_resources_view/$1';
+$route['admin/edit_events'] = 'admin/Admin_resources/edit_resources';
+$route['admin/delete_events/(.*)'] = 'admin/Admin_resources/delete/$1';
+$route['admin/events/view/(.*)'] = 'admin/Admin_resources/detailed_resources_view/$1';
 
 //Feed
 $route['nw_feed']='feeds_controller/feeds_form';
-$route['add_feed']='feeds_controller/do_upload';
+$route['admin/add_feed']='admin/admin_feeds_controller/do_upload';
 $route['allfeeds']='feeds_controller/feeds_table';
+$route['admin/feeds_table']='admin/admin_feeds_controller/feeds_table';
+$route['admin/del_feeds_table']='admin/admin_feeds_controller/deleted_feeds_table';
+$route['admin/feeds_form']='admin/admin_feeds_controller/feeds_form';
+$route['admin/edit_feeds/(:num)']='admin/admin_feeds_controller/edit_feeds_form/$1';
+$route['admin/change_feed']='admin/admin_feeds_controller/update_feed';
+$route['admin/delete/(:num)']='admin/admin_feeds_controller/delete_feed/$1';
+$route['admin/rest_feeds/(:num)']='admin/admin_feeds_controller/restore_feed/$1';
+$route['feeds/list_feeds']='Feeds_controller/feeds_table_for_public';

@@ -66,11 +66,11 @@
 
     <body class="fixed-nav sticky-footer" id="page-top">
         <!--        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> 
             <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/admin_home">
                 <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+            E-WAYS
             </a>
-            <a class="navbar-brand" href="#">E-WAYS</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>                       
@@ -94,12 +94,32 @@
                             <span class="nav-link-text">Tables</span>
                         </a>
                     </li>
-                    <!--            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
-                                    <a class="nav-link" href="<?php echo site_url() ?>/admin/events">
-                                        <i class="fa fa-calendar"></i>
-                                        <span class="nav-link-text">Events</span>
-                                    </a>
-                                </li>-->
+<!--                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
+                        <a class="nav-link" href="<?php echo site_url() ?>/admin/events">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <span class="nav-link-text">Events</span>
+                        </a>
+                    </li>-->
+                    
+                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
+                        <a class="nav-link" href="<?php echo site_url() ?>/admin/feeds_table">
+                            <i class="fa fa-rss-square" aria-hidden="true"></i>
+                            <span class="nav-link-text">Feeds</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
+                        <a class="nav-link" href="<?php echo site_url() ?>/admin/del_feeds_table">
+                            <i class="fa fa-rss-square" aria-hidden="true"></i>
+                            <span class="nav-link-text">Deleted Feeds</span>
+                        </a>
+                    </li>
+
+                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
+                        <a class="nav-link" href="<?php echo site_url() ?>/admin/feeds_form">
+                            <i class="fa fa-rss-square" aria-hidden="true"></i>
+                            <span class="nav-link-text">New Feeds</span>
+                        </a>
+                    </li>
                     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Events">
                         <a class="nav-link" href="<?php echo site_url() ?>/admin/resources">
                             <i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -148,6 +168,12 @@
                 </ul>
             </div>
         </nav>
+
+
+
+
+
+
 
 
 

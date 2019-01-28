@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </style>
         <title>E-WAYS</title>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
-        <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+        <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/all_courses">
             <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
         </a>
         <a class="navbar-brand" href="#">E-WAYS</a>

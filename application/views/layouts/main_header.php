@@ -16,6 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/main_header.css">
         <!--===============================================================================================-->
          <!-- Google Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
@@ -23,59 +24,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="<?php echo base_url() ?>assets/js/modal_popup.js"></script>
         <title>E-WAYS</title>
-          <style>
-    .mandelacolor {
-        background-color: #103A5C;
-    }
-    navbarSupportedContent {
-        z-index: 999999;
-    }
-
-    #navhover:hover{
-        text-decoration: none;
-        color: #FDB819
-
-    }
-    #navhover{
-        color: white
-    }
-    .anyClass {
-      height:700px;
-      overflow-y: scroll;
-      font-size: 12px;
-  }
-  .feeds{
-    font-family: 'Inconsolata', monospace;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.dates{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-}
-/*.fade {
-    opacity: 0;
-    -webkit-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-}*/
-.responsive {
-  width: 100%;
-  max-height: 400%;
-}
- #popup {
-            display:none;
-            position:fixed;
-            margin:0 auto;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-    }
-    body{
-    width: 100%;
-    height: 100%;
-}
-</style>
     </head>
+<body>
 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
+        <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
+            <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+        </a>
+        <a class="navbar-brand" href="#">E-WAYS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/feeds/list_feeds"><i class="fa fa-rss-square" aria-hidden="true"></i> Feeds</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/events"><i class="fa fa-calendar"></i> Events</a>
+                </li>
+            </ul>
+            <ul  class="navbar-nav">
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/student/login"><i class="fa fa-sign-in"></i> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/student_register_form"> <i class="fa fa-user-plus"></i> Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/admin/login"> <i class="fa fa-user"></i> Staff</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>

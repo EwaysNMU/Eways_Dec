@@ -1,42 +1,4 @@
-<body>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
-        <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
-            <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
-        </a>
-        <a class="navbar-brand" href="#">E-WAYS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <ul  class="navbar-nav">
-                <!--                      <li class="nav-item">
-                                        <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/event"><i class="fa fa-calendar"></i> Events</a>
-                                    </li>-->
-                <li class="nav-item">
-                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/student/login"><i class="fa fa-sign-in"></i> Login</a>
-                </li>
-                <li class="nav-item">
-                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/student_register_form"> <i class="fa fa-user-plus"></i> Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a id="navhover" class="nav-link" href="<?php echo site_url() ?>/admin/login"> <i class="fa fa-user"></i> Staff</a>
-                </li>
-
-                <!--                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url() ?>/admin/login">Admin</a>
-                                </li>-->
-
-
-            </ul>
-        </div>
-
-    </nav><br><br>
+<br><br>
 
     <div class="container-login100" style="background-image: url('<?php echo base_url() ?>assets/images/background.jpg');">
         <div class="container">
@@ -141,34 +103,12 @@
         <p align="center" style="color:#FEC000; font-size: 18px; background-color:#103A5C">Welcome to E-WAYS</p>
         <!-- and here comes the image -->
         <?php
-        $ThatTime1 ="15:00:10";
-        $ThatTime2 ="16:00:00";
-        $ThatTime3 ="18:00:10";
-        $time = time();
+        $cur_date = date('y-m-d');
+        $date1 = "2019-01-11";
         ?>
-        <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/GRIT.jpg" alt="popup">
- </div>
+        <img class="responsive" src="<?php echo base_url() ?>assets/images/nugets/Brené Brown.jpg" alt="popup">
+    </div>
 </div>
 </body>
 
-<!-- Footer -->
-<footer class="bottom" >
-    <section id="footer">
-        <div class="container">
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                    <p style="color:white">Nelson Mandela University</p>
-                    <p class="h6">&copy <?php echo date("Y"); ?> All right Reserved.<a class="text-green ml-2" href="https://www.mandela.ac.za" target="_blank">Peer-Collaboration</a></p>
-
-                </div>
-            </div>	
-        </div>
-    </section>
-</footer>
-<!-- ./Footer -->
-<script src="<?php echo base_url() ?>assets/js/jquery-3.3.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</html>

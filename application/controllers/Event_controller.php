@@ -19,5 +19,10 @@ class Event_controller extends CI_Controller {
     public function event_registration_form() {
        $this->load->view('events/event_registration_form');
    }
+   public function list_events() {
+       $this->load->view('layouts/main_header');
+       $this->load->view('events/events');
+       $this->load->view('layouts/main_footer');
+   }
 
 }
