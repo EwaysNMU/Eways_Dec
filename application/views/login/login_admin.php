@@ -56,9 +56,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <body style="background-color: #F5F5F5">
         <nav class="navbar navbar-expand-lg navbar-dark mandelacolor">
             <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/home">
-                <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+                 <img style="height: 60px; width: 220px; align:center" src="<?php echo base_url() ?>assets/images/favicon/NMU_logo.jpg" alt="E-WAYS">
+                <img style="height: 60px; width: 60px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
             </a>
-            <a class="navbar-brand" href="#">E-WAYS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

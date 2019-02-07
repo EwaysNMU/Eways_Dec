@@ -45,7 +45,7 @@
             </script>
         <?php endif ?>
           
-<br><br><br>
+<br><br><br><br><br>
 <?php foreach ($info2->result() as $value) { ?>
                             <?php if ($value->studentID == $this->session->userdata('studentID')): ?>
 <form name="myform" enctype="multipart/form-data" class="form" action="<?php echo site_url() ?>/update_profile_" method="post">

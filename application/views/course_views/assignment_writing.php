@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_detail.css">
-<br>
+<br><br><br>
 <h2 style="text-align:center">Academic Writing</h2>
 <div class="container">
     <div class="mySlides">

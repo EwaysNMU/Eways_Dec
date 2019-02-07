@@ -1,13 +1,15 @@
-<br><br>
+<br><br><br>
 
     <div class="container-login100" style="background-image: url('<?php echo base_url() ?>assets/images/background.jpg');">
+       
         <div class="container">
             <div class="row my-4">
                 <div class="col-lg-8">  
+                    <br>
                     <img class="img-fluid rounded" src="<?php echo base_url() ?>assets/images/home/e<?php echo mt_rand(1, 5); ?>.jpg" alt="e-learning pictures">
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4"><br>
                     <h1><strong>EXCELLENT<br>WAYS OF<br>ACHIEVING<br>YOUR<br>SUCCESS</strong></h1>
                     <br>
                     <a class="btn btn-primary btn-lg" href="<?php echo site_url() ?>/student/login">Check out our courses -></a>

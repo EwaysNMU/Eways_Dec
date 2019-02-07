@@ -137,6 +137,7 @@ $config['subclass_prefix'] = 'MY_';
 |	autoloading (application/config/autoload.php)
 */
 $config['composer_autoload'] = FALSE;
+//$config['composer_autoload'] = "./vendor/autoload.php";
 
 /*
 |--------------------------------------------------------------------------
@@ -325,6 +326,7 @@ $config['cache_query_string'] = FALSE;
 |
 */
 $config['encryption_key'] = 'REALLY_LONG_NUMBER';
+//$config['encryption_key'] = 'thu23456789#[n,';
 
 /*
 |--------------------------------------------------------------------------

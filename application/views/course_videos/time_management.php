@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_detail.css">
 <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/course_videos.css">
-<br>
+<br><br><br>
 <h2 style="text-align:center">Time Management</h2>
 <div class="container">
     <div id="file" class="form-group resp-container">

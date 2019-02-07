@@ -329,8 +329,36 @@ class All_Courses_controller extends CI_Controller {
         $this->Student_model->update_notes($stud_id, $topicID, $desc);
         echo json_encode(['comment_return' => $success]);
     }
+    //          Congrats----------------------------------------------------     
+    public function Congrats() {
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+        
+        $this->load->view('course_views/congrats_mesg', $data);
+//        $this->load->view('layouts/footer');
+      
+    }
+    
+    function my_DOMPDF(){
+        $stud_id = $this->session->userdata('studentID');
+        $data['info2'] = $this->Student_model->get_profile($stud_id);
+  $this->load->library('pdf');
+  $this->pdf->load_view('course_views/congrats_mesg',$data);
+  $this->pdf->render();
+  $this->pdf->stream("Certificate.pdf");
+ }
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

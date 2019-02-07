@@ -1,4 +1,5 @@
-<br><br><br>
+<br><br><br><br>
+<br><br>
 <div class="container">
     <h2 class="text-center">STUDY STRATEGIES FEEDBACK</h2><br>
 

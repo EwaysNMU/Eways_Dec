@@ -65,10 +65,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <title>E-WAYS</title>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark mandelacolor">
         <a class="navbar-brand" href="http://sict-iis.nmmu.ac.za/eways/index.php/all_courses">
-            <img style="height: 40px; width: 40px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
+             <img style="height: 60px; width: 220px; align:center" src="<?php echo base_url() ?>assets/images/favicon/NMU_logo.jpg" alt="E-WAYS">
+            <img style="height: 60px; width: 60px" src="<?php echo base_url() ?>assets/images/favicon/favicon.jpg" alt="E-WAYS">
         </a>
-        <a class="navbar-brand" href="#">E-WAYS</a>
+<!--        <a class="navbar-brand" href="#">E-WAYS</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -79,6 +81,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </li>
             </ul>
             <ul  class="nav navbar-nav">
+                <li class="nav-item">
+                    <a id="navhover" href="<?php echo site_url() ?>/message/congrats">Congrats</a>
+                    <a id="navhover" href="<?php echo site_url() ?>/All_Courses_controller/my_DOMPDF">Download</a>
+                    
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item">
                     <a id="navhover" href="<?php echo site_url() ?>/all_courses"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -114,5 +121,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </nav>
 </head>
-
+<br>
 
